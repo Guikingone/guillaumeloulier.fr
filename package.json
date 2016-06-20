@@ -1,0 +1,16 @@
+{
+  "name": "guillaumeloulier",
+  "version": "0.0.1",
+  "description": "List of dependencies",
+  "dependencies": {
+    "gulp": "https://registry.npmjs.org/gulp/-/gulp-3.9.1.tgz"
+  },
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "gulp": "https://registry.npmjs.org/gulp/-/gulp-3.9.1.tgz",
+    "gulp-concat": "https://registry.npmjs.org/gulp-concat/-/gulp-concat-2.6.0.tgz",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "https://registry.npmjs.org/gulp-sass/-/gulp-sass-2.3.1.tgz",
+    "gulp-sourcemaps": "https://registry.npmjs.org/gulp-sourcemaps/-/gulp-sourcemaps-1.6.0.tgz"
+  }
+}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["home.scss"],"names":[],"mappings":"AAAA,KAEE,WAAY,OAGd,cAEI,SAAU,SACV,WAAY,MACZ,KAAM","file":"main.css","sourcesContent":["body\r\n{\r\n  overflow-x: hidden;\r\n}\r\n\r\n.logo_accueil\r\n{\r\n    position: relative;\r\n    margin-top: 200px;\r\n    size: 2px;\r\n}"],"sourceRoot":"/source/"}

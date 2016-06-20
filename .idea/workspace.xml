@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d24ce414-b940-4e26-8f11-88a0f651dce3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/license/license.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/3d-printer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/3d.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/browser.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/browsers.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/cable.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/cd.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/chat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/color-circle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/compass.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/computing-cloud.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/cpu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/diskette.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/earphones.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/folder.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/font.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/google-glasses.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/idea.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/image.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/ipad.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/keyboard.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/laptop.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/layers.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/magic-wand.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/monitor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/mouse.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/pendrive.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/pie-charts.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/pipette.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/pixelated.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/portfolio.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/poster.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/printer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/psd-file.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/screen-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/search-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/security.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/settings-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/settings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/smartphone-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/smartphone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/smartphones.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/smartwatch.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/startup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/statistics.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/tablet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/vector.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/video-editing.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/png/video-player.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/3d-printer.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/3d.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/browser.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/browsers.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/cable.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/cd.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/chat.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/color-circle.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/compass.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/computing-cloud.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/cpu.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/diskette.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/earphones.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/folder.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/font.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/google-glasses.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/idea.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/image.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/ipad.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/keyboard.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/laptop.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/layers.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/magic-wand.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/monitor.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/mouse.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/pendrive.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/pie-charts.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/pipette.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/pixelated.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/portfolio.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/poster.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/printer.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/psd-file.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/screen-1.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/screen.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/search-1.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/search.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/security.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/settings-1.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/settings.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/smartphone-1.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/smartphone.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/smartphones.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/smartwatch.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/startup.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/statistics.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/tablet.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/vector.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/video-editing.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/psd/video-player.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.bowerrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/guillaumeloulier.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/guillaumeloulier_node_modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulpfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/HomeController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/sass/Home/home.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/sass/main.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/main.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/3d-printer.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/3d.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/browser.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/browsers.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/cable.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/cd.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/chat.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/color-circle.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/compass.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/computing-cloud.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/cpu.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/diskette.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/earphones.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/folder.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/font.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/google-glasses.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/idea.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/image.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/ipad.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/keyboard.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/laptop.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/layers.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/magic-wand.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/monitor.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/mouse.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/pendrive.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/pie-charts.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/pipette.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/pixelated.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/portfolio.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/poster.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/printer.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/psd-file.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/screen-1.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/screen.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/search-1.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/search.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/security.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/settings-1.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/settings.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/smartphone-1.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/smartphone.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/smartphones.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/smartwatch.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/startup.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/statistics.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/tablet.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/vector.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/video-editing.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/eps/video-player.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/3d-printer.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/3d.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/browser.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/browsers.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/cable.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/cd.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/chat.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/color-circle.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/compass.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/computing-cloud.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/cpu.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/diskette.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/earphones.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/folder.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/font.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/google-glasses.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/idea.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/image.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/ipad.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/keyboard.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/laptop.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/layers.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/magic-wand.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/monitor.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/mouse.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/pendrive.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/pie-charts.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/pipette.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/pixelated.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/portfolio.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/poster.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/printer.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/psd-file.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/screen-1.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/screen.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/search-1.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/search.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/security.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/settings-1.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/settings.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/smartphone-1.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/smartphone.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/smartphones.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/smartwatch.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/startup.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/statistics.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/tablet.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/vector.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/video-editing.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/video-player.svg" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
+    </list>
+    <ignored path="guillaumeloulier.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="guillaumeloulier" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.bowerrc" />
+        <option value="$PROJECT_DIR$/bower.json" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/HomeController.php" />
+        <option value="$PROJECT_DIR$/web/assets/sass/Home/home.scss" />
+        <option value="$PROJECT_DIR$/web/assets/sass/main.scss" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guillaumeloulier" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guillaumeloulier" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guillaumeloulier" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guillaumeloulier" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guillaumeloulier" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="C:\Program Files (x86)\Git\bin\bash.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d24ce414-b940-4e26-8f11-88a0f651dce3" name="Default" comment="" />
+      <created>1466437976766</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1466437976766</updated>
+      <workItem from="1466437978019" duration="1153000" />
+      <workItem from="1466439271366" duration="1393000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2546000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2553305" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2553305" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app_dev.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/icons/124091-color-design-tools/png/psd-file.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/icons/124091-color-design-tools/png/cd.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/icons/124091-color-design-tools/png/cable.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/icons/124091-color-design-tools/png/browsers.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/icons/124091-color-design-tools/png/browser.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/icons/124091-color-design-tools/png/3d-printer.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/icons/124091-color-design-tools/png/3d.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/icons/124091-color-design-tools/svg/3d.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding>
+            <element signature="e#40#99#0#PHP" expanded="true" />
+            <element signature="e#322#347#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/sass/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/sass/Home/home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="70" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.bowerrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
