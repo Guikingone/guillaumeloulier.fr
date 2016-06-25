@@ -1,11 +1,14 @@
 /* ==================================================================================================================
-    Main colors
+    Footer
    ================================================================================================================== */
 
-$blue-green: #63c2e7;
-$white-grey: #f4f4f4;
-$white: #ffffff;
-$green-line: #13c1ac;
-
-
-$light-grey: #7e7e7e;
+.footer
+{
+  padding-top: 20px;
+  background-color: $white;
+  height: 100px;
+  max-height: 100px;
+  font-family: 'Anonymous Pro', 'monospace';
+  font-size: 15px;
+  color: $light-grey;
+}

@@ -1,0 +1,19 @@
+/* ==================================================================================================================
+    Style Boutton
+   ================================================================================================================== */
+
+.button_square_introduction
+{
+  height: 55px;
+  width: 162px;
+  border: solid 2px $white;
+  border-radius: 2px;
+  background-color: transparent;
+  color: inherit;
+}
+
+.button_square_introduction > a
+{
+  color: $white;
+  text-decoration: none;
+}

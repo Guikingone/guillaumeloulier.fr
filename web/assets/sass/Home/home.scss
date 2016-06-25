@@ -1,9 +1,73 @@
+/* ==================================================================================================================
+    Style home.html.twig
+   ================================================================================================================== */
+
 body
 {
   overflow-x: hidden;
 }
 
+.introduction
+{
+  background-color: $blue-green;
+  height: 650px;
+  max-height: 650px;
+}
+
+.introduction .text_introduction
+{
+  color: $white;
+  text-align: right;
+  padding-top: 150px;
+  padding-right: 160px;
+  font-size: 100px;
+  font-weight: bold;
+  font-family: 'Dancing Script', 'Cursive';
+}
+
+.introduction .text_accroche
+{
+
+  color: $white;
+  text-align: right;
+  padding-top: 25px;
+  padding-right: 160px;
+  font-size: 25px;
+  font-family: 'Anonymous Pro', 'monospace';
+}
+
+.presentation
+{
+  background-color: $white-grey;
+  height: 650px;
+  max-height: 650px;
+}
+
+.informations
+{
+  background-color: $white;
+  height: 650px;
+  max-height: 650px;
+}
+
 .more
 {
   background-color: $green-line;
+  height: 334px;
+  max-height: 334px;
+}
+
+.more .text-more
+{
+  color: $white;
+  padding-top: 98px;
+  font-family: 'Anonymous Pro', 'monospace';
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.socials_links
+{
+  background-color: $white-grey;
+  height: 650px;
 }
