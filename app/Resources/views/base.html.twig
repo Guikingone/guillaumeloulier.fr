@@ -11,7 +11,12 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <header>
+        </header>
+            {% block body %}{% endblock %}
+        <footer>
+
+        </footer>
         {% block javascripts %}
             <script src="{{ asset('assets/vendor/material-design-lite/material.min.js') }}"></script>
         {% endblock %}

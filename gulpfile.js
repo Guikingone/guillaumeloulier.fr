@@ -6,7 +6,7 @@ var minify_css = require('gulp-minify-css');
 
 var config = {
     assets_dir : 'web/assets/sass',
-    sass_dir :  'Home/*.scss'
+    sass_dir :  '/main.scss'
 };
 
 gulp.task('sass', function () {
