@@ -17,3 +17,36 @@
   color: $white;
   text-decoration: none;
 }
+
+.button_square_introduction i
+{
+  padding-left: 10px;
+  color: $white;
+}
+
+/* ==================================================================================================================
+    Presentation
+   ================================================================================================================== */
+
+.button_square_presentation
+{
+  height: 55px;
+  width: 162px;
+  border: solid 2px $green-button;
+  border-radius: 2px;
+  background-color: transparent;
+  color: inherit;
+  margin-left: 45px;
+}
+
+.button_square_presentation > a
+{
+  color: $green-button;
+  text-decoration: none;
+}
+
+.button_square_presentation i
+{
+  padding-left: 10px;
+  color: $green-button;
+}

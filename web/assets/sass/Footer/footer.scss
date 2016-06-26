@@ -4,11 +4,16 @@
 
 .footer
 {
-  padding-top: 20px;
+  padding-top: 40px;
   background-color: $white;
   height: 100px;
   max-height: 100px;
   font-family: 'Anonymous Pro', 'monospace';
   font-size: 15px;
   color: $light-grey;
+}
+
+.footer .text_up
+{
+  color: $blue-light;
 }
