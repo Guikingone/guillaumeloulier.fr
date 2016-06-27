@@ -2,8 +2,7 @@
     Style home.html.twig
    ================================================================================================================== */
 
-body
-{
+body {
   overflow-x: hidden;
 }
 
@@ -11,15 +10,13 @@ body
     Introduction
    ================================================================================================================== */
 
-.introduction
-{
+.introduction {
   background-color: $blue-green;
   height: 650px;
   max-height: 650px;
 }
 
-.introduction .text_introduction
-{
+.introduction .text_introduction {
   padding-top: 160px;
   color: $white;
   font-size: 50px;
@@ -27,25 +24,29 @@ body
   font-family: 'Dancing Script', 'Cursive';
 }
 
-.introduction .text_accroche
-{
+.introduction .text_accroche {
 
   color: $white;
   font-size: 25px;
   font-family: 'Anonymous Pro', 'monospace';
 }
 
-.introduction .logo_introduction
-{
+.introduction .logo_introduction {
   height: 900px;
   width: 700px;
   padding-top: 25px;
   padding-left: 250px;
 }
 
+@media (max-width: 762px) {
+  .introduction .logo_introduction {
+    display: none;
+  }
+}
+
 @media (min-width: 762px) and (max-width: 992px) {
-  .introduction .logo_introduction
-  {
+  .introduction .logo_introduction {
+    display: none;
     height: 670px;
     width: 400px;
     padding-top: 382px;
@@ -54,8 +55,7 @@ body
 }
 
 @media (min-width: 992px) and (max-width: 1024px) {
-  .introduction .logo_introduction
-  {
+  .introduction .logo_introduction {
     height: 670px;
     width: 400px;
     padding-top: 382px;
@@ -64,8 +64,7 @@ body
 }
 
 @media (min-width: 1024px) and (max-width: 1440px) {
-  .introduction .logo_introduction
-  {
+  .introduction .logo_introduction {
     height: 675px;
     width: 480px;
     padding-top: 300px;
@@ -77,36 +76,45 @@ body
     Presentation
    ================================================================================================================== */
 
-.presentation
-{
+.presentation {
   background-color: $white-grey;
   height: 650px;
   max-height: 650px;
+  h1 {
+    padding-top: -30px;
+    padding-left: 45px;
+    font-family: "Anonymous Pro", "monospace";
+  }
+  p {
+    padding-left: 45px;
+    max-width: 530px;
+  }
 }
 
-.presentation h1
-{
-  padding-top: -30px;
-  padding-left: 45px;
-  font-family: "Anonymous Pro", "monospace";
+.presentation .logo_presentation {
+  padding-top: 30px;
+  height: 750px;
+  width: 450px;
 }
 
-.presentation p
-{
-  padding-left: 45px;
-  max-width: 530px;
+@media (max-width: 1440px) {
+  .presentation .logo_presentation {
+    margin-top: -100px;
+    padding-right: -30px;
+    height: 880px;
+    width: 505px;
+
+  }
 }
 
 @media (width: 1920px) {
-  .presentation h1
-  {
+  .presentation h1 {
     margin-top: -150px;
   }
 }
 
 @media (width: 2560px) {
-  .presentation h1
-  {
+  .presentation h1 {
     margin-top: -150px;
   }
 }
@@ -115,27 +123,56 @@ body
     Informations
    ================================================================================================================== */
 
-.informations
-{
+.informations {
   background-color: $white;
   height: 650px;
   max-height: 650px;
+  h1 p {
+    font-family: 'Anonymous Pro', monospace;
+  }
+  h1 {
+    padding-top: 96px;
+    padding-right: 112px;
+  }
+  p {
+    padding-right: 112px;
+  }
+}
+
+.informations .logo-informations {
+  position: relative;
+  padding-top: 200px;
+  padding-left: 150px;
+  height: 600px;
+}
+
+@media (max-width: 762px) and (max-width: 992px) {
+  .informations {
+    h1 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+    text-align: center;
+  }
+  .informations .logo-informations {
+    display: none;
+  }
 }
 
 /* ==================================================================================================================
     More
    ================================================================================================================== */
 
-.more
-{
+.more {
   background-color: $green-line;
   height: 334px;
   max-height: 334px;
   background: repeating-linear-gradient(to bottom right, $green-line, $green-line-dark);
 }
 
-.more .text-more
-{
+.more .text-more {
   color: $white;
   padding-top: 98px;
   font-family: 'Anonymous Pro', 'monospace';
@@ -147,8 +184,34 @@ body
     Social Links
    ================================================================================================================== */
 
-.socials_links
-{
+.socials_links {
+  padding: 200px 0;
   background-color: $white-grey;
   height: 650px;
+  i.fa {
+    font-size: 40px;
+    border: solid $light-dark 4px;
+    width: 100px;
+    height: 100px;
+    padding: 27px 25px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    transition: all 0.5s;
+  }
+  i.fa.fa mobile {
+    font-size: 50px;
+    padding: 20px 25px;
+  }
+}
+
+@media (max-width: 762px) {
+  .socials_links {
+    padding: 100px 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  .socials_links {
+    padding: 150px 0;
+  }
 }

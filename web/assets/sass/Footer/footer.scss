@@ -2,18 +2,17 @@
     Footer
    ================================================================================================================== */
 
-.footer
-{
+.footer {
   padding-top: 40px;
   background-color: $white;
   height: 100px;
   max-height: 100px;
-  font-family: 'Anonymous Pro', 'monospace';
+  font-family: 'Anonymous Pro', monospace;
   font-size: 15px;
   color: $light-grey;
 }
 
-.footer .text_up
-{
+.footer .text_up {
   color: $blue-light;
+  font-family: 'Anonymous Pro', monospace;
 }

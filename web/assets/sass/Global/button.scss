@@ -2,8 +2,15 @@
     Style Boutton
    ================================================================================================================== */
 
-.button_square_introduction
-{
+button:focus {
+  text-decoration: none;
+}
+
+/* ==================================================================================================================
+    Introduction
+   ================================================================================================================== */
+
+.button_square_introduction {
   height: 55px;
   width: 162px;
   border: solid 2px $white;
@@ -12,14 +19,12 @@
   color: inherit;
 }
 
-.button_square_introduction > a
-{
+.button_square_introduction > a {
   color: $white;
   text-decoration: none;
 }
 
-.button_square_introduction i
-{
+.button_square_introduction i {
   padding-left: 10px;
   color: $white;
 }
@@ -28,8 +33,7 @@
     Presentation
    ================================================================================================================== */
 
-.button_square_presentation
-{
+.button_square_presentation {
   height: 55px;
   width: 162px;
   border: solid 2px $green-button;
@@ -39,14 +43,40 @@
   margin-left: 45px;
 }
 
-.button_square_presentation > a
-{
+.button_square_presentation > a {
   color: $green-button;
   text-decoration: none;
 }
 
-.button_square_presentation i
-{
+.button_square_presentation i {
   padding-left: 10px;
   color: $green-button;
+}
+
+/* ==================================================================================================================
+    Informations
+   ================================================================================================================== */
+
+.button_square_informations {
+  margin-right: 112px;
+  margin-top: 60px;
+  height: 55px;
+  width: 162px;
+  border: solid 2px $red_lighten;
+  border-radius: 2px;
+  background-color: transparent;
+  color: inherit;
+  margin-left: 45px;
+}
+
+.button_square_informations > a
+{
+  color: $red_lighten;
+  text-decoration: none;
+}
+
+.button_square_informations i
+{
+  padding-left: 10px;
+  color: $red_lighten;
 }
