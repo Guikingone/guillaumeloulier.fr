@@ -11,10 +11,15 @@ class HomeController extends Controller
 {
     /**
      * @Route("/", name="homepage")
-     * @Method("GET")
      * @Template("default/index.html.twig")
+     * @Method("GET")
+     *
+     * @return array
      */
-    public function indexAction(){}
+    public function indexAction()
+    {
+        return array('controller' => 'home');
+    }
 
     /**
      * @Route("/about", name="about")
@@ -23,6 +28,6 @@ class HomeController extends Controller
      */
     public function aboutAction()
     {
-
+        return array('controller' => 'contact');
     }
 }
