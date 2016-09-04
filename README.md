@@ -1,68 +1,44 @@
-Symfony Standard Edition
-========================
+# Guillaume Loulier 
 
-Welcome to the Symfony Standard Edition - a fully-functional Symfony
-application that you can use as the skeleton for your new applications.
+This source code is linked to the website guillaumeloulier.fr.
 
-For details on how to download and get started with Symfony, see the
-[Installation][1] chapter of the Symfony Documentation.
+## Installation
 
-What's inside?
---------------
+In order to be effective, this source code has been compiled with webpack and other stuff, here's the process in order to use it in the best condition :
+First, let's start the installation of the Symfony components : 
 
-The Symfony Standard Edition is configured with the following defaults:
+```
+ composer.phar install or composer install 
+```
 
-  * An AppBundle you can use to start coding;
+Let's install the database :
 
-  * Twig as the only configured template engine;
+```
+php bin/console doctrine:database:create
+```
 
-  * Doctrine ORM/DBAL;
+```
+php bin/console doctrine:schema:update --force
+```
 
-  * Swiftmailer;
+After this, your website is ready, clear the cache and install the front assets : 
 
-  * Annotations enabled for everything.
+```
+php bin/console c:c
+php bin/console c:c --env=prod
+```
 
-It comes pre-configured with the following bundles:
+```
+npm install
+npm start
+```
 
-  * **FrameworkBundle** - The core Symfony framework bundle
+Here's come the tricky part, every front assets is managed by Webpack and Typescript, even ReactJS is write in Typescript ! 
+In order to be effective, "npm start" compile every .tsx files into a .js files, after this part, the files are loaded to the view by the asset() function, in order to be effective, the loading is done asynchronously and AMP is installed, this help to have a fast mobile experience, in the same time, "npm start" run the gulp command and compile the .scss files into a .css file.
+After the installation part, let's enjoy the website by running the server :
 
-  * [**SensioFrameworkExtraBundle**][6] - Adds several enhancements, including
-    template and routing annotation capability
+```
+php bin/console server:run
+```
 
-  * [**DoctrineBundle**][7] - Adds support for the Doctrine ORM
-
-  * [**TwigBundle**][8] - Adds support for the Twig templating engine
-
-  * [**SecurityBundle**][9] - Adds security by integrating Symfony's security
-    component
-
-  * [**SwiftmailerBundle**][10] - Adds support for Swiftmailer, a library for
-    sending emails
-
-  * [**MonologBundle**][11] - Adds support for Monolog, a logging library
-
-  * **WebProfilerBundle** (in dev/test env) - Adds profiling functionality and
-    the web debug toolbar
-
-  * **SensioDistributionBundle** (in dev/test env) - Adds functionality for
-    configuring and working with Symfony distributions
-
-  * [**SensioGeneratorBundle**][13] (in dev/test env) - Adds code generation
-    capabilities
-
-  * **DebugBundle** (in dev/test env) - Adds Debug and VarDumper component
-    integration
-
-All libraries and bundles included in the Symfony Standard Edition are
-released under the MIT or BSD license.
-
-Enjoy!
-
-[1]:  https://symfony.com/doc/3.0/book/installation.html
-[6]:  https://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/index.html
-[7]:  https://symfony.com/doc/3.0/book/doctrine.html
-[8]:  https://symfony.com/doc/3.0/book/templating.html
-[9]:  https://symfony.com/doc/3.0/book/security.html
-[10]: https://symfony.com/doc/3.0/cookbook/email.html
-[11]: https://symfony.com/doc/3.0/cookbook/logging/monolog.html
-[13]: https://symfony.com/doc/3.0/bundles/SensioGeneratorBundle/index.html
+Or by starting your local server.

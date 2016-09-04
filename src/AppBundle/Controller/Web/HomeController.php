@@ -23,8 +23,10 @@ class HomeController extends Controller
 
     /**
      * @Route("/about", name="about")
-     * @Method("GET")
      * @Template("default/about.html.twig")
+     * @Method("GET")
+     *
+     * @return array
      */
     public function aboutAction()
     {

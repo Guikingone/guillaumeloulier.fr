@@ -14,5 +14,10 @@
 !var/SymfonyRequirements.php
 /vendor/
 /web/bundles/
+
+# Personnal directory
 /web/assets/vendor/
 /node_modules/
+
+# Compilation directory
+/web/prod/Typescript/app/*
