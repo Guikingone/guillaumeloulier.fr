@@ -6,7 +6,10 @@ var PROD_DIR = path.resolve(__dirname, "web/prod/Typescript/");
 
 var config = {
     entry: {
-        global: DEV_DIR + "/index.tsx"
+        index: DEV_DIR + "/index.tsx",
+        blog: DEV_DIR + '/blog.tsx',
+        portfolio: DEV_DIR + '/portfolio.tsx',
+        contact: DEV_DIR + '/contact.tsx'
     },
     output: {
         path: PROD_DIR + "/app",

@@ -1,25 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <section class="introduction">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="hidden-xs col-lg-6">
-                    <!-- Logo -->
-                    <img src="{{ asset('icons/svg/idea.svg') }}" alt="logo" class="logo_introduction">
-                </div>
-                <div class="col-xs-12 col-lg-6">
-                    <!-- Texte d'introduction -->
-                    <p class="text_introduction pull-right">Que puis-je pour vous ?</p>
-                    <p class="text_accroche pull-right">Parce que créer le monde de demain requiert <em>la</em> bonne idée.</p>
-                    <button class="button_square_introduction pull-right">
-                        <a href="#">En savoir plus</a>
-                        <i class="fa fa-user" aria-hidden="true"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section class="introduction" id="introduction"></section>
     <section class="presentation">
         <div class="container-fluid">
             <div class="row">
@@ -105,5 +87,10 @@
             </div>
         </div>
     </section>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('prod/Typescript/app/index.js') }}"></script>
 {% endblock %}
 
