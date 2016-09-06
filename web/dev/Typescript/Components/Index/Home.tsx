@@ -3,6 +3,10 @@ import * as React from "react";
 export interface HomeProps {}
 
 export class Home extends React.Component<HomeProps, {}> {
+
+    /**
+     * @returns {any}
+     */
     render() {
         return <div className="container-fluid">
             <div className="row">

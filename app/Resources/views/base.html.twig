@@ -29,31 +29,30 @@
         {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
-    <body>
+    <body id="body">
         <header></header>
         <!-- Body -->
-        <main>
             {% block body %}
             {% endblock %}
-        </main>
         <!-- Footer -->
             <footer class="footer">
                 <p class="text-center">© 2016 Guillaume Loulier <em class="text_up">"Guikingone"</em></p>
             </footer>
         {% block javascripts %}
-            <!-- Javascripts -->
+            <!-- Javascript -->
             <script src="{{ asset('assets/vendor/jquery/dist/jquery.min.js') }}"></script>
             <script src="{{ asset('assets/vendor/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+
+            <!-- FOS Javascript -->
+            <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
+            <script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>
 
             <!-- ReactJS -->
             <script src="{{ asset('dev/ReactJS/Sources/react.js') }}"></script>
             <script src="{{ asset('dev/ReactJS/Sources/react-dom.js') }}"></script>
 
-            <!-- Global JS -->
+            <!-- Global Javascript -->
             <script src="#" async></script>
-
-            <!-- Personnal ReactJS -->
-            <script src="{{ asset('prod/Typescript/app/index.js') }}" async></script>
         {% endblock %}
     </body>
 </html>

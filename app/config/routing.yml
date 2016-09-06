@@ -2,3 +2,7 @@ app:
     resource: "@AppBundle/Controller/"
     type:     annotation
     prefix:   /
+
+# FOS Bundle
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
