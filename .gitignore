@@ -16,8 +16,8 @@
 /web/bundles/
 
 # Personnal directory
-/web/assets/vendor/
+/web/dev/vendor/
 /node_modules/
 
 # Compilation directory
-/web/prod/Typescript/app/*
+/web/prod/*

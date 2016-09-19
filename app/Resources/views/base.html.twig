@@ -21,35 +21,39 @@
         <script async src="https://cdn.ampproject.org/v0.js"></script>
         {% block stylesheets %}
             <!-- Stylesheets -->
-            <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap/dist/css/bootstrap.min.css') }}">
-            <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+            <link rel="stylesheet" href="{{ asset('dev/vendor/bootstrap/dist/css/bootstrap.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('prod/css/main.css') }}">
             <script src="https://use.fontawesome.com/73ced121df.js"></script>
             <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Dancing+Script" rel="stylesheet">
         {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
-    <body id="body">
-        <header></header>
+    <body>
+        <!-- Header -->
+        <header class="container-fluid" id="header">
+
+        </header>
         <!-- Body -->
+        <main>
             {% block body %}
             {% endblock %}
+        </main>
         <!-- Footer -->
-            <footer class="footer">
-                <p class="text-center">© 2016 Guillaume Loulier <em class="text_up">"Guikingone"</em></p>
-            </footer>
+        <footer class="footer">
+            <p class="text-center">© 2016 Guillaume Loulier <em class="text_up">"Guikingone"</em></p>
+        </footer>
         {% block javascripts %}
             <!-- Javascript -->
-            <script src="{{ asset('assets/vendor/jquery/dist/jquery.min.js') }}"></script>
-            <script src="{{ asset('assets/vendor/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+            <script src="{{ asset('dev/vendor/jquery/dist/jquery.min.js') }}"></script>
+            <script src="{{ asset('dev/vendor/bootstrap/dist/js/bootstrap.min.js') }}"></script>
 
             <!-- FOS Javascript -->
             <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
             <script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>
 
-            <!-- ReactJS -->
-            <script src="{{ asset('dev/ReactJS/Sources/react.js') }}"></script>
-            <script src="{{ asset('dev/ReactJS/Sources/react-dom.js') }}"></script>
+            <!-- Core Angular -->
+            <script src="{{ asset('prod/js/index.js') }}"></script>
 
             <!-- Global Javascript -->
             <script src="#" async></script>

@@ -1,17 +1,19 @@
 {
   "compilerOptions": {
-    "outDir": "./web/js/prod/",
-    "sourceMap": true,
-    "noImplicitAny": true,
+    "target": "ES5",
     "module": "commonjs",
-    "target": "es5",
-    "jsx": "react"
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": false
   },
   "exclude": [
-    "./node_modules"
+    "node_modules",
+    "typings/main",
+    "typings/main.d.ts"
   ],
-  "files": [
-    "./typings/index.d.ts",
-    "./web/dev/Typescript/index.tsx"
-  ]
+  "compileOnSave": false,
+  "buildOnSave": false
 }

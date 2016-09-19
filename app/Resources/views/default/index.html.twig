@@ -1,10 +1,34 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+    <section class="row introduction" id="introduction">
+        <div class="col-xs-10">
+            <core-introduction></core-introduction>
+        </div>
+    </section>
+    <section class="row articles" id="articles">
+        <div class="col-xs-10">
+
+        </div>
+    </section>
+    <section class="row information" id="information">
+        <div class="col-xs-10">
+
+        </div>
+    </section>
+    <section class="row slider" id="slider">
+        <div class="col-xs-10">
+
+        </div>
+    </section>
+    <section class="row formations" id="formations">
+        <div class="col-xs-10">
+
+        </div>
+    </section>
 {% endblock %}
 
 {% block javascripts %}
     {{ parent() }}
-    <script src="{{ asset('prod/Typescript/app/index.js') }}"></script>
 {% endblock %}
 

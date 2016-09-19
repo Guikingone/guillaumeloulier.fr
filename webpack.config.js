@@ -1,39 +1,28 @@
 var webpack = require('webpack');
 var path = require("path");
 
-var DEV_DIR = path.resolve(__dirname, "web/dev/Typescript/");
-var PROD_DIR = path.resolve(__dirname, "web/prod/Typescript/");
+var DEV_DIR = path.resolve(__dirname, "web/dev/");
+var PROD_DIR = path.resolve(__dirname, "web/prod/");
+
+var ANGULAR_DIR = path.resolve(DEV_DIR + '/Angular/');
 
 var config = {
     entry: {
-        index: DEV_DIR + "/index.tsx",
-        blog: DEV_DIR + '/blog.tsx',
-        portfolio: DEV_DIR + '/portfolio.tsx',
-        contact: DEV_DIR + '/contact.tsx'
+        'index': ANGULAR_DIR + "/main.ts"
     },
+    devtools: 'source-map-loader',
     output: {
-        path: PROD_DIR + "/app",
+        path: PROD_DIR + "/js",
         filename: "[name].js",
-        publicPath: "./web/"
-    },
-    devtool: "source-map",
-    resolve: {
-        extensions: ["", ".webpack.js", ".web.js", ".tsx", ".js"]
+        publicPath: "./web/prod"
     },
     module: {
-        preLoaders: [
-            {
-                test: /\.js$/,
-                loader: "source-map-loader"
-            }
-        ],
         loaders: [
-            { test: /\.tsx?$/, include: DEV_DIR, loader: "ts-loader"}
+            { test: /\.ts$/, loader: 'ts' }
         ]
     },
-    externals: {
-        "react": "React",
-        "react-dom": "ReactDOM"
+    resolve: {
+        extensions: ["", ".webpack.js", ".web.js", ".ts", ".js"]
     }
 };
 
