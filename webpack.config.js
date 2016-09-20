@@ -18,7 +18,7 @@ var config = {
     },
     module: {
         loaders: [
-            { test: /\.ts$/, loader: 'ts' }
+            { test: /\.ts$/, loader: 'ts-loader' }
         ]
     },
     resolve: {

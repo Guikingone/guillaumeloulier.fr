@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <section class="introduction" id="introduction">
+        <div class="introduction_header">
+            <h1 class="introduction_maintext">Guillaume Loulier</h1>
+            <p class="introduction_subtext">Create tomorrow world</p>
+        </div>
+        <amp-img src="#" alt="" class="introduction_image"></amp-img>
+        <core-introduction></core-introduction>
+    </section>
+    <section class="articles" id="articles">
+        <core-articles></core-articles>
+        <button class="articles_button-more"><a href="#" class="article_button_link">En lire plus</a></button>
+    </section>
+    <section class="information" id="information">
+        <core-informations></core-informations>
+    </section>
+    <section class="row slider" id="slider">
+        <core-slider></core-slider>
+    </section>
+    <section class="row formations" id="formations">
+        <core-formation></core-formation>
+    </section>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('prod/js/index.js') }}"></script>
+{% endblock %}
+

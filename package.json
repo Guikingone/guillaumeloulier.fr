@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "List of dependencies",
   "scripts": {
-    "start": "webpack -d && gulp sass",
+    "start": "webpack -d --progress && gulp sass",
     "prod": "webpack -p gulp sass"
   },
   "dependencies": {

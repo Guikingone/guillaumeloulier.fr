@@ -1,11 +1,13 @@
 /* ==================================================================================================================
-    Body style
+    Style Blog
    ================================================================================================================== */
 
-body {
+.articles_button-more {
+  border-radius: 25px;
+  border-color: $articles_button;
   background-color: $body-color;
-  margin: 0;
-  main {
-    margin-left: 295px;
+  .article_button_link {
+    color: $articles_button;
+    font-size: 14px;
   }
 }

@@ -1,0 +1,30 @@
+/* ==================================================================================================================
+    Style Information
+   ================================================================================================================== */
+
+@media (min-device-width: 1024px) and (max-device-width: 2560px) {
+  .information {
+    max-height: 417px;
+    height: 417px;
+    width: auto;
+    background-color: $information_background;
+  }
+}
+
+@media (min-device-width: 768px) and (max-device-width: 1024px) {
+  .information {
+    max-height: 417px;
+    height: 417px;
+    width: auto;
+    background-color: $information_background
+  }
+}
+
+@media (min-device-width: 320px) and (max-device-width: 425px) {
+  .information {
+    max-height: 417px;
+    height: 417px;
+    width: auto;
+    background-color: $information_background
+  }
+}

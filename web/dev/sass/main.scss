@@ -2,9 +2,23 @@
     Core file
    ================================================================================================================== */
 
+// Colors
 @import "Colors/colors";
 
-@import "Navbar/navbar";
+// Body
+@import "Global/body";
+
+// Blog
+@import "Blog/blog";
+
+// Informations
+@import "Informations/informations";
+
+
+// Navigation style
+//@import "Navbar/navbar-large";
+//@import "Navbar/navbar-tablet";
+//@import "Navbar/navbar-mobile";
 
 @import "Global/button";
 

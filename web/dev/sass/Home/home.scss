@@ -13,6 +13,24 @@ body {
 .introduction {
   height: 1430px;
   max-height: 1430px;
+  .introduction_header {
+    padding-top: 112px;
+    padding-left: 120px;
+    .introduction_maintext {
+      font-size: 20px;
+      font-family: 'Roboto';
+      color: $body-color;
+    }
+    .introduction_subtext {
+      font-size: 12px;
+      font-family: 'Roboto';
+      color: $body-color;
+    }
+  }
+  .introduction_image {
+    max-height: inherit;
+    height: inherit;
+  }
 }
 
 .introduction .text_introduction {

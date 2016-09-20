@@ -11,7 +11,7 @@ class BlogController extends Controller
 {
     /**
      * @Route("/blog", name="home_blog")
-     * @Template("default/blog.html.twig")
+     * @Template("Blog/index.html.twig")
      * @Method("GET")
      *
      * @return array

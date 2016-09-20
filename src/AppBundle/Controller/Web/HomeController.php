@@ -11,7 +11,7 @@ class HomeController extends Controller
 {
     /**
      * @Route("/", name="homepage")
-     * @Template("default/index.html.twig")
+     * @Template("Index/index.html.twig")
      * @Method("GET")
      *
      * @return array

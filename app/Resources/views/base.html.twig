@@ -26,46 +26,16 @@
             <script src="https://use.fontawesome.com/73ced121df.js"></script>
             <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Dancing+Script" rel="stylesheet">
+            <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
         {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        <!-- Header -->
-        <header>
-            <div class="navigation_bar">
-                <div class="navigation_bar_content">
-                    <span class="navigation-bar_menu"></span>
-                    <div class="navigation-bar_menu-link">
-                        <ul class="menu-container">
-                            <li class="menu-subcontainer">
-                                <a class="menu-link" href="#">Blog</a>
-                            </li>
-                            <li class="menu-subcontainer">
-                                <a class="menu-link" href="#">Créations</a>
-                            </li>
-                            <li class="menu-subcontainer">
-                                <a class="menu-link" href="#">Formations</a>
-                            </li>
-                            <li class="menu-subcontainer">
-                                <a class="menu-link" href="#">Liens utiles</a>
-                            </li>
-                            <li class="menu-subcontainer">
-                                <a class="menu-link" href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </header>
         <!-- Body -->
-        <main>
+        <main class="main_core">
             {% block body %}
             {% endblock %}
         </main>
-        <!-- Footer -->
-        <footer class="footer">
-            <p class="text-center">© 2016 Guillaume Loulier <em class="text_up">"Guikingone"</em></p>
-        </footer>
         {% block javascripts %}
             <!-- Javascript -->
             <script src="{{ asset('dev/vendor/jquery/dist/jquery.min.js') }}"></script>
@@ -74,9 +44,6 @@
             <!-- FOS Javascript -->
             <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
             <script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>
-
-            <!-- Core Angular -->
-            <script src="{{ asset('prod/js/index.js') }}"></script>
 
             <!-- Global Javascript -->
             <script src="#" async></script>

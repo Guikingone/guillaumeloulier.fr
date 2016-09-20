@@ -3,16 +3,10 @@
    ================================================================================================================== */
 
 .footer {
-  padding-top: 40px;
-  background-color: $white;
-  height: 100px;
-  max-height: 100px;
-  font-family: 'Anonymous Pro', monospace;
-  font-size: 15px;
-  color: $light-grey;
-}
+  margin-left: 295px;
 
-.footer .text_up {
-  color: $blue-light;
-  font-family: 'Anonymous Pro', monospace;
+  // Head Text
+  .footer-text_headtext {
+    margin: auto;
+  }
 }
