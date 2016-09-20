@@ -1,10 +1,44 @@
 /* ==================================================================================================================
-    Navbar
+    Navigation style
    ================================================================================================================== */
 
-.header {
+.navigation_bar {
   width: 295px;
-  height: auto;
+  background: $body-color;
+  float: left;
+  &:after {
+    content: "";
+    position: fixed;
+    width: inherit;
+    background: inherit;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+  .navigation_bar_content {
+    position: relative;
+    z-index: 10;
+    .navigation-bar_menu {
+      height: 290px;
+      background-color: inherit;
+    }
+    .navigation-bar_menu-link {
 
-  background-color: $body-color;
+      .menu-container {
+        list-style-type: none;
+      }
+      .menu-link {
+        text-decoration: none;
+        color: $navigation_menu-color;
+
+        padding: 14px 16px;
+
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+  }
 }
