@@ -5,16 +5,13 @@
     "description": "The \"Symfony Standard Edition\" distribution",
     "autoload": {
         "psr-4": {
-            "Tests\\": "tests/",
-            "AbstractBundle\\": "src/AbstractBundle",
-            "AppBundle\\": "src/AppBundle"
+            "": "src/"
         },
         "classmap": [ "app/AppKernel.php", "app/AppCache.php" ]
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/",
-            "AppBundle\\": "src/AppBundle"
+            "": "src/"
         }
     },
     "require": {

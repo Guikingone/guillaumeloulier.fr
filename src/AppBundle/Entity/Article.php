@@ -1,13 +1,24 @@
 <?php
+/*
+ * This file is part of the $PROJECT project.
+ *
+ * (c) Guillaume Loulier <guillaume.loulier@hotmail.fr>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
 namespace AppBundle\Entity;
 
-use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
-use AbstractBundle\Interface\ArticleInterface;
+use AbstractBundle\Model\ArticleInterface;
+use AbstractBundle\Model\TagsInterface;
+use AbstractBundle\Model\CommentaryInterface;
+use Doctrine\Common\Collections\ArrayCollection;
+use Symfony\Component\Config\Definition\Exception\Exception;
 
 /**
- * Article
+ * Article.
  *
  * @ORM\Table(name="article")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\ArticleRepository")
@@ -52,24 +63,35 @@ class Article implements ArticleInterface
     private $content;
 
     /**
-     * @var array
-     *
-     * @ORM\Column(name="category", type="array")
+     * @ORM\ManyToOne(targetEntity="AbstractBundle\Model\CategoryInterface", inversedBy="article")
      */
     private $category;
 
     /**
-     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Tags", mappedBy="article")
+     * @ORM\OneToMany(targetEntity="AbstractBundle\Model\TagsInterface", mappedBy="article")
+     *
+     * @var TagsInterface
      */
     private $tags;
 
     /**
-     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Commentary", mappedBy="article")
+     * @ORM\OneToMany(targetEntity="AbstractBundle\Model\CommentaryInterface", mappedBy="article")
+     *
+     * @var CommentaryInterface
      */
     private $commentary;
 
     /**
-     * Get id
+     * Constructor.
+     */
+    public function __construct()
+    {
+        $this->tags = new ArrayCollection();
+        $this->commentary = new ArrayCollection();
+    }
+
+    /**
+     * Get id.
      *
      * @return int
      */
@@ -79,7 +101,7 @@ class Article implements ArticleInterface
     }
 
     /**
-     * Set title
+     * Set title.
      *
      * @param string $title
      *
@@ -93,7 +115,7 @@ class Article implements ArticleInterface
     }
 
     /**
-     * Get title
+     * Get title.
      *
      * @return string
      */
@@ -103,7 +125,7 @@ class Article implements ArticleInterface
     }
 
     /**
-     * Set author
+     * Set author.
      *
      * @param string $author
      *
@@ -117,7 +139,7 @@ class Article implements ArticleInterface
     }
 
     /**
-     * Get author
+     * Get author.
      *
      * @return string
      */
@@ -127,7 +149,7 @@ class Article implements ArticleInterface
     }
 
     /**
-     * Set datePublication
+     * Set datePublication.
      *
      * @param \DateTime $datePublication
      *
@@ -135,13 +157,18 @@ class Article implements ArticleInterface
      */
     public function setDatePublication($datePublication)
     {
-        $this->datePublication = $datePublication;
+        try {
+            $datePublication = new \DateTime();
+            $this->datePublication = $datePublication;
+        } catch (Exception $e) {
+            $e->getMessage();
+        }
 
         return $this;
     }
 
     /**
-     * Get datePublication
+     * Get datePublication.
      *
      * @return \DateTime
      */
@@ -151,7 +178,7 @@ class Article implements ArticleInterface
     }
 
     /**
-     * Set content
+     * Set content.
      *
      * @param string $content
      *
@@ -165,7 +192,7 @@ class Article implements ArticleInterface
     }
 
     /**
-     * Get content
+     * Get content.
      *
      * @return string
      */
@@ -175,13 +202,13 @@ class Article implements ArticleInterface
     }
 
     /**
-     * Set category
+     * Set category.
      *
-     * @param array $category
+     * @param \AppBundle\Entity\Category $category
      *
      * @return Article
      */
-    public function setCategory($category)
+    public function setCategory(\AppBundle\Entity\Category $category = null)
     {
         $this->category = $category;
 
@@ -189,9 +216,9 @@ class Article implements ArticleInterface
     }
 
     /**
-     * Get category
+     * Get category.
      *
-     * @return array
+     * @return \AppBundle\Entity\Category
      */
     public function getCategory()
     {
@@ -199,7 +226,7 @@ class Article implements ArticleInterface
     }
 
     /**
-     * Add tag
+     * Add tag.
      *
      * @param \AppBundle\Entity\Tags $tag
      *
@@ -213,7 +240,7 @@ class Article implements ArticleInterface
     }
 
     /**
-     * Remove tag
+     * Remove tag.
      *
      * @param \AppBundle\Entity\Tags $tag
      */
@@ -223,26 +250,17 @@ class Article implements ArticleInterface
     }
 
     /**
-     * Get tags
+     * Get tags.
      *
      * @return \Doctrine\Common\Collections\Collection
      */
-    public function getTag()
+    public function getTags()
     {
         return $this->tags;
     }
 
     /**
-     * Constructor
-     */
-    public function __construct()
-    {
-        $this->commentary = new ArrayCollection();
-        $this->tags = new ArrayCollection();
-    }
-
-    /**
-     * Add commentary
+     * Add commentary.
      *
      * @param \AppBundle\Entity\Commentary $commentary
      *
@@ -256,7 +274,7 @@ class Article implements ArticleInterface
     }
 
     /**
-     * Remove commentary
+     * Remove commentary.
      *
      * @param \AppBundle\Entity\Commentary $commentary
      */
@@ -266,7 +284,7 @@ class Article implements ArticleInterface
     }
 
     /**
-     * Get commentary
+     * Get commentary.
      *
      * @return \Doctrine\Common\Collections\Collection
      */

@@ -2,15 +2,16 @@
 
 namespace AppBundle\Entity;
 
+use AbstractBundle\Model\TagsInterface;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Tags
+ * Tags.
  *
  * @ORM\Table(name="tags")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\TagsRepository")
  */
-class Tags
+class Tags implements TagsInterface
 {
     /**
      * @var int
@@ -28,9 +29,13 @@ class Tags
      */
     private $title;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="AbstractBundle\Model\ArticleInterface", inversedBy="tags")
+     */
+    private $article;
 
     /**
-     * Get id
+     * Get id.
      *
      * @return int
      */
@@ -40,7 +45,7 @@ class Tags
     }
 
     /**
-     * Set title
+     * Set title.
      *
      * @param string $title
      *
@@ -54,12 +59,36 @@ class Tags
     }
 
     /**
-     * Get title
+     * Get title.
      *
      * @return string
      */
     public function getTitle()
     {
         return $this->title;
+    }
+
+    /**
+     * Set article.
+     *
+     * @param \AppBundle\Entity\Article $article
+     *
+     * @return Tags
+     */
+    public function setArticle(\AppBundle\Entity\Article $article = null)
+    {
+        $this->article = $article;
+
+        return $this;
+    }
+
+    /**
+     * Get article.
+     *
+     * @return \AppBundle\Entity\Article
+     */
+    public function getArticle()
+    {
+        return $this->article;
     }
 }

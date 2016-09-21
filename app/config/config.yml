@@ -52,7 +52,10 @@ doctrine:
         naming_strategy: doctrine.orm.naming_strategy.underscore
         auto_mapping: true
         resolve_target_entities:
-            AbstractBundle\Interface\ArticleInterface: AppBundle\Entity\Article
+            AbstractBundle\Model\ArticleInterface: AppBundle\Entity\Article
+            AbstractBundle\Model\CategoryInterface: AppBundle\Entity\Category
+            AbstractBundle\Model\CommentaryInterface: AppBundle\Entity\Commentary
+            AbstractBundle\Model\TagsInterface: AppBundle\Entity\Tags
 
 # Swiftmailer Configuration
 swiftmailer:

@@ -3,14 +3,15 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use AbstractBundle\Model\CommentaryInterface;
 
 /**
- * Commentary
+ * Commentary.
  *
  * @ORM\Table(name="commentary")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\CommentaryRepository")
  */
-class Commentary
+class Commentary implements CommentaryInterface
 {
     /**
      * @var int
@@ -42,9 +43,13 @@ class Commentary
      */
     private $content;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="AbstractBundle\Model\ArticleInterface", inversedBy="commentary")
+     */
+    private $article;
 
     /**
-     * Get id
+     * Get id.
      *
      * @return int
      */
@@ -54,7 +59,7 @@ class Commentary
     }
 
     /**
-     * Set author
+     * Set author.
      *
      * @param string $author
      *
@@ -68,7 +73,7 @@ class Commentary
     }
 
     /**
-     * Get author
+     * Get author.
      *
      * @return string
      */
@@ -78,7 +83,7 @@ class Commentary
     }
 
     /**
-     * Set date
+     * Set date.
      *
      * @param \DateTime $date
      *
@@ -92,7 +97,7 @@ class Commentary
     }
 
     /**
-     * Get date
+     * Get date.
      *
      * @return \DateTime
      */
@@ -102,7 +107,7 @@ class Commentary
     }
 
     /**
-     * Set content
+     * Set content.
      *
      * @param string $content
      *
@@ -116,12 +121,36 @@ class Commentary
     }
 
     /**
-     * Get content
+     * Get content.
      *
      * @return string
      */
     public function getContent()
     {
         return $this->content;
+    }
+
+    /**
+     * Set article.
+     *
+     * @param \AppBundle\Entity\Article $article
+     *
+     * @return Commentary
+     */
+    public function setArticle(\AppBundle\Entity\Article $article = null)
+    {
+        $this->article = $article;
+
+        return $this;
+    }
+
+    /**
+     * Get article.
+     *
+     * @return \AppBundle\Entity\Article
+     */
+    public function getArticle()
+    {
+        return $this->article;
     }
 }

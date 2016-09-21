@@ -1,9 +1,21 @@
 <?php
+/*
+ * This file is part of the $PROJECT project.
+ *
+ * (c) Guillaume Loulier <guillaume.loulier@hotmail.fr>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use ArticleInterface;
+use AbstractBundle\Model\ArticleInterface;
+use AbstractBundle\Model\TagsInterface;
+use AbstractBundle\Model\CommentaryInterface;
+use Doctrine\Common\Collections\ArrayCollection;
+use Symfony\Component\Config\Definition\Exception\Exception;
 
 /**
  * Article
@@ -11,7 +23,7 @@ use ArticleInterface;
  * @ORM\Table(name="article")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\ArticleRepository")
  */
-class Article
+class Article implements ArticleInterface
 {
     /**
      * @var int
@@ -51,21 +63,32 @@ class Article
     private $content;
 
     /**
-     * @var array
-     *
-     * @ORM\Column(name="category", type="array")
+     * @ORM\ManyToOne(targetEntity="AbstractBundle\Model\CategoryInterface", inversedBy="article")
      */
     private $category;
 
     /**
-     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Tags", mappedBy="article")
+     * @ORM\OneToMany(targetEntity="AbstractBundle\Model\TagsInterface", mappedBy="article")
+     *
+     * @var TagsInterface
      */
     private $tags;
 
     /**
-     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Commentary", mappedBy="article")
+     * @ORM\OneToMany(targetEntity="AbstractBundle\Model\CommentaryInterface", mappedBy="article")
+     *
+     * @var CommentaryInterface
      */
     private $commentary;
+
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->tags = new ArrayCollection();
+        $this->commentary = new ArrayCollection();
+    }
 
     /**
      * Get id
@@ -134,7 +157,13 @@ class Article
      */
     public function setDatePublication($datePublication)
     {
-        $this->datePublication = $datePublication;
+        try {
+            $datePublication = new \DateTime();
+            $this->datePublication = $datePublication;
+
+        }catch (Exception $e) {
+            $e->getMessage();
+        }
 
         return $this;
     }
@@ -174,58 +203,37 @@ class Article
     }
 
     /**
-     * Set category
+     * Add tag
      *
-     * @param array $category
+     * @param \AppBundle\Entity\Tags $tag
      *
      * @return Article
      */
-    public function setCategory($category)
+    public function addTag(\AppBundle\Entity\Tags $tag)
     {
-        $this->category = $category;
+        $this->tags[] = $tag;
 
         return $this;
     }
 
     /**
-     * Get category
+     * Remove tag
      *
-     * @return array
+     * @param \AppBundle\Entity\Tags $tag
      */
-    public function getCategory()
+    public function removeTag(\AppBundle\Entity\Tags $tag)
     {
-        return $this->category;
-    }
-
-    /**
-     * Set tags
-     *
-     * @param array $tags
-     *
-     * @return Article
-     */
-    public function setTags($tags)
-    {
-        $this->tags = $tags;
-
-        return $this;
+        $this->tags->removeElement($tag);
     }
 
     /**
      * Get tags
      *
-     * @return array
+     * @return \Doctrine\Common\Collections\Collection
      */
     public function getTags()
     {
         return $this->tags;
-    }
-    /**
-     * Constructor
-     */
-    public function __construct()
-    {
-        $this->commentary = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
     /**

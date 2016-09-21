@@ -3,6 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use AbstractBundle\Model\CommentaryInterface;
 
 /**
  * Commentary
@@ -10,7 +11,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="commentary")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\CommentaryRepository")
  */
-class Commentary
+class Commentary implements CommentaryInterface
 {
     /**
      * @var int
@@ -42,6 +43,10 @@ class Commentary
      */
     private $content;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="AbstractBundle\Model\ArticleInterface", inversedBy="commentary")
+     */
+    private $article;
 
     /**
      * Get id
@@ -123,5 +128,29 @@ class Commentary
     public function getContent()
     {
         return $this->content;
+    }
+
+    /**
+     * Set article
+     *
+     * @param \AppBundle\Entity\Article $article
+     *
+     * @return Commentary
+     */
+    public function setArticle(\AppBundle\Entity\Article $article = null)
+    {
+        $this->article = $article;
+
+        return $this;
+    }
+
+    /**
+     * Get article
+     *
+     * @return \AppBundle\Entity\Article
+     */
+    public function getArticle()
+    {
+        return $this->article;
     }
 }
