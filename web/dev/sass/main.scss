@@ -8,20 +8,20 @@
 // Body
 @import "Global/body";
 
-// Blog
-@import "Blog/blog";
-
-// Informations
-@import "Informations/informations";
-
-
 // Navigation style
 //@import "Navbar/navbar-large";
 //@import "Navbar/navbar-tablet";
 //@import "Navbar/navbar-mobile";
 
+// Blog
+@import "Blog/blog";
+
+// Information
+@import "Informations/informations";
+
 @import "Global/button";
 
 @import "Home/home";
 
+// Footer
 @import "Footer/footer";
