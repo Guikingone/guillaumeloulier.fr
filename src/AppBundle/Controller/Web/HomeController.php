@@ -10,7 +10,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class HomeController extends Controller
 {
     /**
-     * @Route("/", name="homepage")
+     * @Route("/", name="home")
      * @Template("Home/index.html.twig")
      * @Method("GET")
      *
@@ -22,7 +22,19 @@ class HomeController extends Controller
     }
 
     /**
-     * @Route("/about", name="about")
+     * @Route("/blog", name="home_blog")
+     * @Template("Home/blog.html.twig")
+     * @Method("GET")
+     *
+     * @return array
+     */
+    public function blogAction()
+    {
+        return array('controller' => 'blog');
+    }
+
+    /**
+     * @Route("/about", name="home_about")
      * @Template("Home/about.html.twig")
      * @Method("GET")
      *
@@ -34,7 +46,7 @@ class HomeController extends Controller
     }
 
     /**
-     * @Route("/formations", name="formations")
+     * @Route("/formations", name="home_formations")
      * @Template("Home/formations.html.twig")
      * @Method("GET")
      *
@@ -46,7 +58,7 @@ class HomeController extends Controller
     }
 
     /**
-     * @Route("/contact", name="contact")
+     * @Route("/contact", name="home_contact")
      * @Template("Home/contact.html.twig")
      * @Method("GET")
      *

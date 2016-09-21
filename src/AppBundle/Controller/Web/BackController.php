@@ -2,12 +2,20 @@
 
 namespace AppBundle\Controller\Web;
 
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
+/**
+ * Class BackController.
+ *
+ * @Route("/darkzone")
+ */
 class BackController extends Controller
 {
-    public function indexAction($name)
+    /**
+     * @Route("/", name="back_index")
+     */
+    public function indexAction()
     {
-        return $this->render('', array('name' => $name));
     }
 }

@@ -11,8 +11,14 @@
 
 namespace AppBundle\Service;
 
+use AppBundle\Entity\Article;
+use AppBundle\Form\Type\Add\ArticleType;
 use Doctrine\ORM\EntityManager;
+use Doctrine\ORM\OptimisticLockException;
+use Doctrine\ORM\ORMInvalidArgumentException;
 use Symfony\Component\Form\FormFactory;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\OptionsResolver\Exception\InvalidOptionsException;
 
 /**
  * Class Back.
@@ -47,5 +53,35 @@ class Back
     public function getArticles()
     {
         return $this->doctrine->getRepository('AppBundle:Article')->findAll();
+    }
+
+    /**
+     * Allow to create a new Article $article.
+     *
+     * @param Request $request
+     *
+     * @return \Symfony\Component\Form\FormInterface
+     */
+    public function addArticle(Request $request)
+    {
+        try {
+            $article = new Article();
+
+            $form = $this->form->create(ArticleType::class, $article);
+            $form->handleRequest($request);
+
+            if ($form->isSubmitted() && $form->isValid()) {
+                $this->doctrine->persist($article);
+                $this->doctrine->flush();
+            }
+        } catch (InvalidOptionsException $optionsException) {
+            echo 'Erreur détectée : '.$optionsException->getMessage();
+        } catch (ORMInvalidArgumentException $argumentException) {
+            echo 'Erreur détectée : '.$argumentException->getMessage();
+        } catch (OptimisticLockException $lockException) {
+            echo 'Erreur détectée : '.$lockException->getMessage();
+        } finally {
+            return $form;
+        }
     }
 }

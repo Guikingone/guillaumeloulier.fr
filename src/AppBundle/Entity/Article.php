@@ -157,11 +157,14 @@ class Article implements ArticleInterface
      */
     public function setDatePublication($datePublication)
     {
-        try {
-            $datePublication = new \DateTime();
-            $this->datePublication = $datePublication;
-        } catch (Exception $e) {
-            $e->getMessage();
+        if (null === $datePublication) {
+            try {
+                $datePublication = new \DateTime();
+            } catch (Exception $e) {
+                echo 'Erreur détectée : '.$e->getMessage();
+            } finally {
+                $this->datePublication = $datePublication;
+            }
         }
 
         return $this;
