@@ -1,12 +1,106 @@
 /* ==================================================================================================================
     Footer
    ================================================================================================================== */
+@media (min-device-width: 1024px) and (max-device-width: 2560px) {
+  footer {
+    background-color: $body-color;
+    margin-left: 290px;
 
-.footer {
-  margin-left: 295px;
+    .footer-left_intro-bloc {
+      padding-left: 346px;
+      .footer-header_text {
+        color: $footer-header-color;
+      }
 
-  // Head Text
-  .footer-text_headtext {
-    margin: auto;
+      .footer-header_subtext {
+        color: $footer-header-color;
+
+      }
+
+      .footer-body_text {
+        color: $navigation_menu-color;
+
+      }
+    }
+  }
+}
+
+@media (min-device-width: 768px) and (max-device-width: 1024px) {
+  footer {
+    background-color: $body-color;
+    padding-left: 180px;
+
+    .footer-left_intro-bloc {
+      .footer-header_text {
+        color: $footer-header-color;
+      }
+
+      .footer-header_subtext {
+        color: $footer-header-color;
+
+      }
+
+      .footer-body_text {
+        color: $navigation_menu-color;
+
+      }
+    }
+  }
+}
+
+@media (min-device-width: 425px) and (max-device-width: 768px) {
+  footer {
+    background-color: $body-color;
+    padding-left: 180px;
+
+    .footer-left_intro-bloc {
+      .footer-header_text {
+        color: $footer-header-color;
+      }
+
+      .footer-header_subtext {
+        color: $footer-header-color;
+
+      }
+
+      .footer-body_text {
+        color: $navigation_menu-color;
+
+      }
+    }
+  }
+}
+
+@media (min-device-width: 320px) and (max-device-width: 425px) {
+  footer {
+    background-color: $body-color;
+    padding-left: 90px;
+
+    // Style text
+    .footer-header_text {
+      color: $footer-header-color;
+    }
+
+    .footer-header_subtext {
+      color: $footer-header-color;
+    }
+
+    .footer-body_text {
+      color: $navigation_menu-color;
+    }
+
+    // Style blocs
+    .footer-left_intro-bloc {
+      height: 265px;
+    }
+
+    .footer-center_about-bloc {
+      height: 265px;
+
+    }
+
+    .footer-right_social-bloc {
+      height: 265px;
+    }
   }
 }

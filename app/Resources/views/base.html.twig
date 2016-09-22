@@ -23,7 +23,7 @@
             <!-- Stylesheets -->
             <link rel="stylesheet" href="{{ asset('dev/vendor/bootstrap/dist/css/bootstrap.min.css') }}">
             <link rel="stylesheet" href="{{ asset('prod/css/main.css') }}">
-            <script src="https://use.fontawesome.com/73ced121df.js"></script>
+            <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
             <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Dancing+Script" rel="stylesheet">
             <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
@@ -31,11 +31,79 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
+        <header class="main-navigation">
+            <div class="main-navigation_content">
+                <span class="main-navigation_menu-icon"></span>
+                <ul class="main-navigation_menu-link">
+                    <li>
+                        <a href="#">Blog</a>
+                        <p>Discuter, partager et apprendre.</p>
+                    </li>
+                    <li>
+                        <a href="#">Créations</a>
+                        <p>Découvrir le futur.</p>
+                    </li>
+                    <li>
+                        <a href="#">Formations</a>
+                        <p>Se former avec plaisir !</p>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                        <p>Aller plus loin.</p>
+                    </li>
+                </ul>
+            </div>
+        </header>
         <!-- Body -->
         <main class="main_core">
             {% block body %}
             {% endblock %}
         </main>
+        <footer>
+            <section class="footer-left_intro-bloc">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2 class="footer-header_text">Guillaume Loulier</h2>
+                            <p class="footer-header_subtext">
+                                Create tomorrow world !
+                            </p>
+                            <p class="footer-body_text">
+                                Créer le monde de demain est une tâche difficile de prime abord mais le coût temps justifie l'investissement,
+                                en effet, quoi de plus savoureux que la réussite sur le long terme ?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="footer-center_about-bloc">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2 class="footer-header_text">A propos</h2>
+                            <p class="footer-body_text">
+                                Créer le monde de demain est une tâche difficile de prime abord mais le coût temps justifie l'investissement,
+                                en effet, quoi de plus savoureux que la réussite sur le long terme ?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="footer-right_social-bloc">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2 class="footer-header_text">Me suivre :</h2>
+                            <i class="ion-social-facebook footer-social_link"><a href="#"></a></i>
+                            <i class="ion-social-twitter footer-social_link"><a href="#"></a></i>
+                            <i class="ion-social-github footer-social_link"><a href="#"></a></i>
+                            <i class="ion-social-tumblr footer-social_link"><a href="#"></a></i>
+                            <i class="ion-social-linkedin footer-social_link"><a href="#"></a></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
         {% block javascripts %}
             <!-- Javascript -->
             <script src="{{ asset('dev/vendor/jquery/dist/jquery.min.js') }}"></script>
