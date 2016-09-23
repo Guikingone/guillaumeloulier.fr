@@ -3,6 +3,8 @@
    ================================================================================================================== */
 @media (min-device-width: 1024px) and (max-device-width: 2560px) {
   footer {
+    display: flex;
+    flex-direction: row;
     background-color: $body-color;
     margin-left: 290px;
 
@@ -27,6 +29,9 @@
 
 @media (min-device-width: 768px) and (max-device-width: 1024px) {
   footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: $body-color;
     padding-left: 180px;
 
@@ -50,6 +55,9 @@
 
 @media (min-device-width: 425px) and (max-device-width: 768px) {
   footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     background-color: $body-color;
     padding-left: 180px;
 
@@ -73,6 +81,9 @@
 
 @media (min-device-width: 320px) and (max-device-width: 425px) {
   footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     background-color: $body-color;
     padding-left: 90px;
 

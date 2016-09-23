@@ -21,44 +21,51 @@
         <script async src="https://cdn.ampproject.org/v0.js"></script>
         {% block stylesheets %}
             <!-- Stylesheets -->
-            <link rel="stylesheet" href="{{ asset('dev/vendor/bootstrap/dist/css/bootstrap.min.css') }}">
+            <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue_grey-orange.min.css" />
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script" />
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Dancing+Script"  />
+            <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css" />
+
+            <!-- Personal Stylesheets -->
             <link rel="stylesheet" href="{{ asset('prod/css/main.css') }}">
-            <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
-            <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Dancing+Script" rel="stylesheet">
-            <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
         {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        <header class="main-navigation">
-            <div class="main-navigation_content">
-                <span class="main-navigation_menu-icon"></span>
-                <ul class="main-navigation_menu-link">
-                    <li>
-                        <a href="#">Blog</a>
-                        <p>Discuter, partager et apprendre.</p>
-                    </li>
-                    <li>
-                        <a href="#">Créations</a>
-                        <p>Découvrir le futur.</p>
-                    </li>
-                    <li>
-                        <a href="#">Formations</a>
-                        <p>Se former avec plaisir !</p>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                        <p>Aller plus loin.</p>
-                    </li>
-                </ul>
+        <!-- Navigation bar -->
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <span class="mdl-layout-title">Guillaume Loulier {% block navbar %}{% endblock %}</span>
+                    <div class="mdl-layout-spacer"></div>
+                    <nav class="mdl-navigation mdl-layout--large-screen-only">
+                        <a class="mdl-navigation__link" href="{{ path('home') }}">Accueil</a>
+                        <a class="mdl-navigation__link" href="{{ path('home_blog') }}">Blog</a>
+                        <a class="mdl-navigation__link" href="{{ path('home_creations') }}">Créations</a>
+                        <a class="mdl-navigation__link" href="{{ path('home_formations') }}">Formations</a>
+                        <a class="mdl-navigation__link" href="{{ path('home_contact') }}">Contact</a>
+                    </nav>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="{{ path('home') }}">Accueil</a>
+                    <a class="mdl-navigation__link" href="{{ path('home_blog') }}">Blog</a>
+                    <a class="mdl-navigation__link" href="{{ path('home_creations') }}">Créations</a>
+                    <a class="mdl-navigation__link" href="{{ path('home_formations') }}">Formations</a>
+                    <a class="mdl-navigation__link" href="{{ path('home_contact') }}">Contact</a>
+                </nav>
             </div>
-        </header>
-        <!-- Body -->
-        <main class="main_core">
-            {% block body %}
-            {% endblock %}
-        </main>
+            <main class="mdl-layout__content">
+                <div class="page-content">
+                    <!-- Body -->
+                    {% block body %}
+                    {% endblock %}
+                </div>
+            </main>
+        </div>
+        <!-- Footer -->
         <footer>
             <section class="footer-left_intro-bloc">
                 <div class="container-fluid">
@@ -82,8 +89,12 @@
                         <div class="col-xs-12">
                             <h2 class="footer-header_text">A propos</h2>
                             <p class="footer-body_text">
-                                Créer le monde de demain est une tâche difficile de prime abord mais le coût temps justifie l'investissement,
-                                en effet, quoi de plus savoureux que la réussite sur le long terme ?
+                                Qui suis-je ?
+                            </p>
+                            <p class="footer-body_text">
+                                Qui suis-je ?
+                            </p><p class="footer-body_text">
+                                Qui suis-je ?
                             </p>
                         </div>
                     </div>
@@ -107,7 +118,7 @@
         {% block javascripts %}
             <!-- Javascript -->
             <script src="{{ asset('dev/vendor/jquery/dist/jquery.min.js') }}"></script>
-            <script src="{{ asset('dev/vendor/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+            <script src="{{ asset('dev/vendor/material-design-lite/material.min.js') }}"></script>
 
             <!-- FOS Javascript -->
             <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>

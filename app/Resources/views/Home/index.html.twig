@@ -2,30 +2,46 @@
 
 {% block body %}
     <section class="introduction" id="introduction">
-        <div class="introduction_header">
-            <h1 class="introduction_maintext">Guillaume Loulier</h1>
-            <p class="introduction_subtext">Create tomorrow world</p>
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--12-col-phone">
+                <img src="#" alt="" class="introduction_image" />
+            </div>
         </div>
-        <amp-img src="#" alt="" class="introduction_image"></amp-img>
-        <core-introduction></core-introduction>
     </section>
     <section class="articles" id="articles">
-        <core-articles></core-articles>
-        <button class="articles_button-more"><a href="#" class="article_button_link">En lire plus</a></button>
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--12-col-phone">
+                <core-articles></core-articles>
+                <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="{{ path('home_blog') }}">
+                    En lire plus
+                </a>
+            </div>
+        </div>
     </section>
     <section class="information" id="information">
-        <article>
-            <h2>Une première information en dur !</h2>
-            <p>Hello World !</p>
-        </article>
-        <core-informations></core-informations>
-
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--12-col-phone">
+                <article class="information-bloc_informations">
+                    <h2>Une première information en dur !</h2>
+                    <p>Hello World !</p>
+                </article>
+                <core-informations></core-informations>
+            </div>
+        </div>
     </section>
     <section class="row slider" id="slider">
-        <core-slider></core-slider>
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--12-col-phone">
+                <core-slider></core-slider>
+            </div>
+        </div>
     </section>
     <section class="row formations" id="formations">
-        <core-formation></core-formation>
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--12-col-phone">
+                <core-formation></core-formation>
+            </div>
+        </div>
     </section>
 {% endblock %}
 

@@ -34,6 +34,18 @@ class HomeController extends Controller
     }
 
     /**
+     * @Route("/creations", name="home_creations")
+     * @Template("Home/creations.html.twig")
+     * @Method("GET")
+     *
+     * @return array
+     */
+    public function creationsAction()
+    {
+        return array('controller' => 'creations');
+    }
+
+    /**
      * @Route("/about", name="home_about")
      * @Template("Home/about.html.twig")
      * @Method("GET")
