@@ -16,17 +16,17 @@ namespace AbstractBundle\Model;
 interface TagsInterface
 {
     /**
-     * @return mixed
+     * @return integer
      */
     public function getId();
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getTitle();
 
     /**
-     * @return mixed
+     * @param string $title
      */
     public function setTitle($title);
 }

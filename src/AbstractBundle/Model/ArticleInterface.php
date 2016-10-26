@@ -16,17 +16,17 @@ namespace AbstractBundle\Model;
 interface ArticleInterface
 {
     /**
-     * @return mixed
+     * @return string
      */
     public function getTitle();
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getAuthor();
 
     /**
-     * @return mixed
+     * @return \DateTime
      */
     public function getDatePublication();
 
@@ -36,30 +36,22 @@ interface ArticleInterface
     public function getContent();
 
     /**
-     * @param $title
-     *
-     * @return mixed
+     * @param string $title
      */
     public function setTitle($title);
 
     /**
-     * @param $author
-     *
-     * @return mixed
+     * @param string $author
      */
     public function setAuthor($author);
 
     /**
-     * @param $datePublication
-     *
-     * @return mixed
+     * @param \DateTime $datePublication
      */
     public function setDatePublication($datePublication);
 
     /**
      * @param $content
-     *
-     * @return mixed
      */
     public function setContent($content);
 }
