@@ -1,6 +1,6 @@
 <?php
 /*
- * This file is part of the $PROJECT project.
+ * This file is part of the guillaumeloulier project.
  *
  * (c) Guillaume Loulier <guillaume.loulier@hotmail.fr>
  *
@@ -15,7 +15,6 @@ use AbstractBundle\Model\ArticleInterface;
 use AbstractBundle\Model\TagsInterface;
 use AbstractBundle\Model\CommentaryInterface;
 use Doctrine\Common\Collections\ArrayCollection;
-use Symfony\Component\Config\Definition\Exception\Exception;
 
 /**
  * Article.
@@ -109,7 +108,7 @@ class Article implements ArticleInterface
      */
     public function setTitle($title)
     {
-        $this->title = $title;
+        $this->title = (string) $title;
 
         return $this;
     }
@@ -133,7 +132,7 @@ class Article implements ArticleInterface
      */
     public function setAuthor($author)
     {
-        $this->author = $author;
+        $this->author = (string) $author;
 
         return $this;
     }
@@ -160,7 +159,7 @@ class Article implements ArticleInterface
         if (null === $datePublication) {
             try {
                 $datePublication = new \DateTime();
-            } catch (Exception $e) {
+            } catch (\Exception $e) {
                 echo 'Erreur détectée : '.$e->getMessage();
             } finally {
                 $this->datePublication = $datePublication;
@@ -211,7 +210,7 @@ class Article implements ArticleInterface
      *
      * @return Article
      */
-    public function setCategory(\AppBundle\Entity\Category $category = null)
+    public function setCategory(Category $category = null)
     {
         $this->category = $category;
 
@@ -235,7 +234,7 @@ class Article implements ArticleInterface
      *
      * @return Article
      */
-    public function addTag(\AppBundle\Entity\Tags $tag)
+    public function addTag(Tags $tag)
     {
         $this->tags[] = $tag;
 
@@ -247,7 +246,7 @@ class Article implements ArticleInterface
      *
      * @param \AppBundle\Entity\Tags $tag
      */
-    public function removeTag(\AppBundle\Entity\Tags $tag)
+    public function removeTag(Tags $tag)
     {
         $this->tags->removeElement($tag);
     }
@@ -269,7 +268,7 @@ class Article implements ArticleInterface
      *
      * @return Article
      */
-    public function addCommentary(\AppBundle\Entity\Commentary $commentary)
+    public function addCommentary(Commentary $commentary)
     {
         $this->commentary[] = $commentary;
 
@@ -281,7 +280,7 @@ class Article implements ArticleInterface
      *
      * @param \AppBundle\Entity\Commentary $commentary
      */
-    public function removeCommentary(\AppBundle\Entity\Commentary $commentary)
+    public function removeCommentary(Commentary $commentary)
     {
         $this->commentary->removeElement($commentary);
     }

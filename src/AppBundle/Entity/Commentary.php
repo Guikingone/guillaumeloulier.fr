@@ -4,7 +4,6 @@ namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use AbstractBundle\Model\CommentaryInterface;
-use Symfony\Component\Config\Definition\Exception\Exception;
 
 /**
  * Commentary.
@@ -68,7 +67,7 @@ class Commentary implements CommentaryInterface
      */
     public function setAuthor($author)
     {
-        $this->author = $author;
+        $this->author = (string) $author;
 
         return $this;
     }
@@ -95,7 +94,7 @@ class Commentary implements CommentaryInterface
         if (null === $date) {
             try {
                 $date = new \DateTime();
-            } catch (Exception $e) {
+            } catch (\Exception $e) {
                 echo 'Erreur détectée : '.$e->getMessage();
             } finally {
                 $this->date = $date;
@@ -146,7 +145,7 @@ class Commentary implements CommentaryInterface
      *
      * @return Commentary
      */
-    public function setArticle(\AppBundle\Entity\Article $article = null)
+    public function setArticle(Article $article = null)
     {
         $this->article = $article;
 

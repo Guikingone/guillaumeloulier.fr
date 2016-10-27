@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the $PROJECT project.
+ * This file is part of the guillaumeloulier project.
  *
  * (c) Guillaume Loulier <guillaume.loulier@hotmail.fr>
  *
@@ -12,8 +12,8 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Doctrine\Common\Collections\ArrayCollection;
 use AbstractBundle\Model\CategoryInterface;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * @ORM\Entity
@@ -65,7 +65,7 @@ class Category implements CategoryInterface
      */
     public function setTitle($title)
     {
-        $this->title = $title;
+        $this->title = (string) $title;
 
         return $this;
     }
@@ -87,7 +87,7 @@ class Category implements CategoryInterface
      *
      * @return Category
      */
-    public function addArticle(\AppBundle\Entity\Article $article)
+    public function addArticle(Article $article)
     {
         $this->article[] = $article;
 
@@ -99,7 +99,7 @@ class Category implements CategoryInterface
      *
      * @param \AppBundle\Entity\Article $article
      */
-    public function removeArticle(\AppBundle\Entity\Article $article)
+    public function removeArticle(Article $article)
     {
         $this->article->removeElement($article);
     }

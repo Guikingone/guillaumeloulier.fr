@@ -2,8 +2,8 @@
 
 namespace AppBundle\Entity;
 
-use AbstractBundle\Model\TagsInterface;
 use Doctrine\ORM\Mapping as ORM;
+use AbstractBundle\Model\TagsInterface;
 
 /**
  * Tags.
@@ -53,7 +53,7 @@ class Tags implements TagsInterface
      */
     public function setTitle($title)
     {
-        $this->title = $title;
+        $this->title = (string) $title;
 
         return $this;
     }
@@ -75,7 +75,7 @@ class Tags implements TagsInterface
      *
      * @return Tags
      */
-    public function setArticle(\AppBundle\Entity\Article $article = null)
+    public function setArticle(Article $article = null)
     {
         $this->article = $article;
 
