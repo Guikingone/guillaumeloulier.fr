@@ -1,5 +1,5 @@
 before_script:
-- bash _ci/docker_install.sh > /dev/null
+ - bash _ci/docker_install.sh > /dev/null
 
 test:5.6:
   image: php:5.6
@@ -10,3 +10,7 @@ test:7.0:
   image: php:7.0
   script:
   - phpunit --configuration phpunit.xml.dist
+
+after_script:
+ - git remote add github git@github.com:Guikingone/guillaumeloulier.fr.git
+ - git push github
