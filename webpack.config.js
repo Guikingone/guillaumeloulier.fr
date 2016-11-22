@@ -1,28 +1,36 @@
 var webpack = require('webpack');
 var path = require("path");
 
-var DEV_DIR = path.resolve(__dirname, "web/dev/");
-var PROD_DIR = path.resolve(__dirname, "web/prod/");
-
-var ANGULAR_DIR = path.resolve(DEV_DIR + '/Angular/');
+var PROD_DIR = path.resolve(__dirname, "web/prod");
+var TSX_DIR = path.resolve(__dirname, "web/dev/Typescript/");
 
 var config = {
     entry: {
-        'index': ANGULAR_DIR + "/main.ts"
+        'main': TSX_DIR + '/main.tsx',
+        'index': TSX_DIR + "/index.tsx",
+        'blog': TSX_DIR + "/blog.tsx",
+        'contact': TSX_DIR + "/contact.tsx"
     },
-    devtools: 'source-map-loader',
     output: {
-        path: PROD_DIR + "/js",
+        path: PROD_DIR + "/app/js",
         filename: "[name].js",
-        publicPath: "./web/prod"
+        publicPath: "./web/"
+    },
+    devtool: "source-map",
+    resolve: {
+        extensions: ["", ".webpack.js", ".web.js", ".tsx", ".js"]
     },
     module: {
+        preLoaders: [
+            { test: /\.js$/, loader: "source-map-loader" }
+        ],
         loaders: [
-            { test: /\.ts$/, loader: 'ts-loader' }
+            { test: /\.tsx?$/, include: TSX_DIR, loader: "ts-loader"}
         ]
     },
-    resolve: {
-        extensions: ["", ".webpack.js", ".web.js", ".ts", ".js"]
+    externals: {
+        "react": "React",
+        "react-dom": "ReactDOM"
     }
 };
 
