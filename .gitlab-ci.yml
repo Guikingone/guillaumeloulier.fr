@@ -3,11 +3,6 @@ before_script:
   - php composer.phar install
   - bash _ci/docker_install.sh > /dev/null
 
-test:5.6:
-  image: php:5.6
-  script:
-  - phpunit --configuration phpunit.xml.dist
-
 test:7.0:
   image: php:7.0
   script:
