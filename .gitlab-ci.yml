@@ -5,7 +5,9 @@ stages:
  - deploy
 
 # =================================================================================================
-# Test environment (used to test the classes and unit phase).
+# Test environment
+# =====
+# Used to test the classes and unit phase).
 # =================================================================================================
 test:
  stage: test
@@ -14,19 +16,20 @@ test:
   - php composer.phar install
   - bash _ci/docker_install.sh > /dev/null
 
-test:5.6:
+ test:5.6:
   image: php:5.6
   script:
   - phpunit --configuration phpunit.xml.dist
 
-test:7.0:
+ test:7.0:
   image: php:7.0
   script:
   - phpunit --configuration phpunit.xml.dist
 
 # =================================================================================================
-# Build phase (used to build the code and check if this last one
-#              can be used into "functionnal" application).
+# Build phase
+# =====
+# Used to build the code and check if this last one can be used into "functionnal" application.
 # =================================================================================================
 build:
  stage: build
@@ -36,13 +39,17 @@ build:
   - bash _ci/docker_install.sh > /dev/null
 
 # =================================================================================================
-# Performances phase (used to test the performances using Blackfire).
+# Performances phase
+# =====
+# Used to test the performances using Blackfire.
 # =================================================================================================
 performances:
  stage: performances
 
 # =================================================================================================
-# Deploy phase (used if every stages is green and all the code are covered).
+# Deploy phase
+# =====
+# Used if every stages is green and all the code are covered.
 # =================================================================================================
 deploy:
  stage: deploy
