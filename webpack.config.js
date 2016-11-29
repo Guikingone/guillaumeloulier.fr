@@ -2,7 +2,7 @@ var webpack = require('webpack');
 var path = require("path");
 
 var PROD_DIR = path.resolve(__dirname, "web/prod");
-var TSX_DIR = path.resolve(__dirname, "web/dev/Typescript/");
+var TSX_DIR = path.resolve(__dirname, "web/dev/typescript/");
 
 var config = {
     entry: {

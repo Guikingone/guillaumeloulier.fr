@@ -6,32 +6,16 @@ use Doctrine\ORM\Mapping as ORM;
 use AbstractBundle\Model\TagsInterface;
 
 /**
- * Tags.
+ * Class Tags
  *
- * @ORM\Table(name="tags")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\TagsRepository")
+ * @package AppBundle\Entity
+ *
+ * @author Guillaume Loulier <contact@guillaumeloulier.fr>
  */
 class Tags implements TagsInterface
 {
-    /**
-     * @var int
-     *
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
-     */
     private $id;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="title", type="string", length=255)
-     */
     private $title;
-
-    /**
-     * @ORM\ManyToOne(targetEntity="AbstractBundle\Model\ArticleInterface", inversedBy="tags")
-     */
     private $article;
 
     /**
@@ -90,5 +74,34 @@ class Tags implements TagsInterface
     public function getArticle()
     {
         return $this->article;
+    }
+    /**
+     * @var \AppBundle\Entity\Article
+     */
+    private $category;
+
+
+    /**
+     * Set category
+     *
+     * @param \AppBundle\Entity\Article $category
+     *
+     * @return Tags
+     */
+    public function setCategory(Article $category = null)
+    {
+        $this->category = $category;
+
+        return $this;
+    }
+
+    /**
+     * Get category
+     *
+     * @return \AppBundle\Entity\Article
+     */
+    public function getCategory()
+    {
+        return $this->category;
     }
 }

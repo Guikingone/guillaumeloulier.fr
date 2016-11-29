@@ -8,9 +8,11 @@
     "prod": "webpack -p gulp sass"
   },
   "dependencies": {
+    "@types/react": "^0.14.51",
+    "@types/react-dom": "^0.14.19",
     "gulp": "https://registry.npmjs.org/gulp/-/gulp-3.9.1.tgz",
-    "react": "^15.3.1",
-    "react-dom": "^15.3.1",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
     "source-map-loader": "^0.1.5",
     "typescript": "^1.8.10",
     "typings": "^1.3.3",

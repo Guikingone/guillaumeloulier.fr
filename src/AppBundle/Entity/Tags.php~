@@ -2,41 +2,24 @@
 
 namespace AppBundle\Entity;
 
-use AbstractBundle\Model\TagsInterface;
 use Doctrine\ORM\Mapping as ORM;
+use AbstractBundle\Model\TagsInterface;
 
 /**
- * Tags
+ * Class Tags
  *
- * @ORM\Table(name="tags")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\TagsRepository")
+ * @package AppBundle\Entity
+ *
+ * @author Guillaume Loulier <contact@guillaumeloulier.fr>
  */
 class Tags implements TagsInterface
 {
-    /**
-     * @var int
-     *
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
-     */
     private $id;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="title", type="string", length=255)
-     */
     private $title;
-
-    /**
-     * @ORM\ManyToOne(targetEntity="AbstractBundle\Model\ArticleInterface", inversedBy="tags")
-     */
     private $article;
 
-
     /**
-     * Get id
+     * Get id.
      *
      * @return int
      */
@@ -46,7 +29,7 @@ class Tags implements TagsInterface
     }
 
     /**
-     * Set title
+     * Set title.
      *
      * @param string $title
      *
@@ -54,13 +37,13 @@ class Tags implements TagsInterface
      */
     public function setTitle($title)
     {
-        $this->title = $title;
+        $this->title = (string) $title;
 
         return $this;
     }
 
     /**
-     * Get title
+     * Get title.
      *
      * @return string
      */
@@ -70,13 +53,13 @@ class Tags implements TagsInterface
     }
 
     /**
-     * Set article
+     * Set article.
      *
      * @param \AppBundle\Entity\Article $article
      *
      * @return Tags
      */
-    public function setArticle(\AppBundle\Entity\Article $article = null)
+    public function setArticle(Article $article = null)
     {
         $this->article = $article;
 
@@ -84,7 +67,7 @@ class Tags implements TagsInterface
     }
 
     /**
-     * Get article
+     * Get article.
      *
      * @return \AppBundle\Entity\Article
      */

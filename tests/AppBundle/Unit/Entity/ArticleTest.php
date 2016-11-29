@@ -2,6 +2,15 @@
 
 namespace tests\AppBundle\Unit\Entity;
 
+use AppBundle\Entity\Article;
+
+/**
+ * Class ArticleTest
+ *
+ * @package tests\AppBundle\Unit\Entity
+ *
+ * @author Guillaume Loulier <contact@guillaume.loulier.fr>
+ */
 class ArticleTest
 {
     /**
@@ -9,6 +18,9 @@ class ArticleTest
      */
     public function testArticleBoot()
     {
-
+        $article = new Article();
+        $article->setAuthor('Guikingone');
+        $article->setDatePublication(new \DateTime());
+        $article->setContent('hello World !');
     }
 }

@@ -6,50 +6,22 @@ use Doctrine\ORM\Mapping as ORM;
 use AbstractBundle\Model\CommentaryInterface;
 
 /**
- * Commentary
+ * Class Commentary
  *
- * @ORM\Table(name="commentary")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\CommentaryRepository")
+ * @package AppBundle\Entity
+ *
+ * @author Guillaume Loulier <contact@guillaumeloulier.fr>
  */
 class Commentary implements CommentaryInterface
 {
-    /**
-     * @var int
-     *
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
-     */
     private $id;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="author", type="string", length=255)
-     */
     private $author;
-
-    /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="date", type="datetime")
-     */
     private $date;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="content", type="text")
-     */
     private $content;
-
-    /**
-     * @ORM\ManyToOne(targetEntity="AbstractBundle\Model\ArticleInterface", inversedBy="commentary")
-     */
     private $article;
 
     /**
-     * Get id
+     * Get id.
      *
      * @return int
      */
@@ -59,7 +31,7 @@ class Commentary implements CommentaryInterface
     }
 
     /**
-     * Set author
+     * Set author.
      *
      * @param string $author
      *
@@ -67,13 +39,13 @@ class Commentary implements CommentaryInterface
      */
     public function setAuthor($author)
     {
-        $this->author = $author;
+        $this->author = (string) $author;
 
         return $this;
     }
 
     /**
-     * Get author
+     * Get author.
      *
      * @return string
      */
@@ -83,7 +55,7 @@ class Commentary implements CommentaryInterface
     }
 
     /**
-     * Set date
+     * Set date.
      *
      * @param \DateTime $date
      *
@@ -91,13 +63,21 @@ class Commentary implements CommentaryInterface
      */
     public function setDate($date)
     {
-        $this->date = $date;
+        if (null === $date) {
+            try {
+                $date = new \DateTime();
+            } catch (\Exception $e) {
+                echo 'Erreur détectée : '.$e->getMessage();
+            } finally {
+                $this->date = $date;
+            }
+        }
 
         return $this;
     }
 
     /**
-     * Get date
+     * Get date.
      *
      * @return \DateTime
      */
@@ -107,7 +87,7 @@ class Commentary implements CommentaryInterface
     }
 
     /**
-     * Set content
+     * Set content.
      *
      * @param string $content
      *
@@ -121,7 +101,7 @@ class Commentary implements CommentaryInterface
     }
 
     /**
-     * Get content
+     * Get content.
      *
      * @return string
      */
@@ -131,13 +111,13 @@ class Commentary implements CommentaryInterface
     }
 
     /**
-     * Set article
+     * Set article.
      *
      * @param \AppBundle\Entity\Article $article
      *
      * @return Commentary
      */
-    public function setArticle(\AppBundle\Entity\Article $article = null)
+    public function setArticle(Article $article = null)
     {
         $this->article = $article;
 
@@ -145,7 +125,7 @@ class Commentary implements CommentaryInterface
     }
 
     /**
-     * Get article
+     * Get article.
      *
      * @return \AppBundle\Entity\Article
      */

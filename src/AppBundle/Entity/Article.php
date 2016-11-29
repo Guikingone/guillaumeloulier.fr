@@ -12,72 +12,23 @@ namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use AbstractBundle\Model\ArticleInterface;
-use AbstractBundle\Model\TagsInterface;
-use AbstractBundle\Model\CommentaryInterface;
 use Doctrine\Common\Collections\ArrayCollection;
 
 /**
- * Article.
+ * Class Article
+ * @package AppBundle\Entity
  *
- * @ORM\Table(name="article")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\ArticleRepository")
+ * @author Guillaume Loulier <contact@guillaumeloulier.fr>
  */
 class Article implements ArticleInterface
 {
-    /**
-     * @var int
-     *
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
-     */
     private $id;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="title", type="string", length=255, unique=true)
-     */
     private $title;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="author", type="string", length=255)
-     */
     private $author;
-
-    /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="datePublication", type="datetime")
-     */
     private $datePublication;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="content", type="text")
-     */
     private $content;
-
-    /**
-     * @ORM\ManyToOne(targetEntity="AbstractBundle\Model\CategoryInterface", inversedBy="article")
-     */
     private $category;
-
-    /**
-     * @ORM\OneToMany(targetEntity="AbstractBundle\Model\TagsInterface", mappedBy="article")
-     *
-     * @var TagsInterface
-     */
     private $tags;
-
-    /**
-     * @ORM\OneToMany(targetEntity="AbstractBundle\Model\CommentaryInterface", mappedBy="article")
-     *
-     * @var CommentaryInterface
-     */
     private $commentary;
 
     /**

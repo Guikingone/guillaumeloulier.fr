@@ -16,26 +16,16 @@ use AbstractBundle\Model\CategoryInterface;
 use Doctrine\Common\Collections\ArrayCollection;
 
 /**
- * @ORM\Entity
- * @ORM\Table(name="category")
+ * Class Category
+ *
+ * @package AppBundle\Entity
+ *
+ * @author Guillaume Loulier <contact@guillaumeloulier.fr>
  */
 class Category implements CategoryInterface
 {
-    /**
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
-     * @ORM\Column(type="integer")
-     */
     private $id;
-
-    /**
-     * @ORM\Column(type="string", length=100, nullable=false)
-     */
     private $title;
-
-    /**
-     * @ORM\OneToMany(targetEntity="AbstractBundle\Model\ArticleInterface", mappedBy="category")
-     */
     private $article;
 
     /**
@@ -112,5 +102,44 @@ class Category implements CategoryInterface
     public function getArticle()
     {
         return $this->article;
+    }
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+    private $tags;
+
+
+    /**
+     * Add tag
+     *
+     * @param \AppBundle\Entity\Article $tag
+     *
+     * @return Category
+     */
+    public function addTag(Article $tag)
+    {
+        $this->tags[] = $tag;
+
+        return $this;
+    }
+
+    /**
+     * Remove tag
+     *
+     * @param \AppBundle\Entity\Article $tag
+     */
+    public function removeTag(Article $tag)
+    {
+        $this->tags->removeElement($tag);
+    }
+
+    /**
+     * Get tags
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getTags()
+    {
+        return $this->tags;
     }
 }

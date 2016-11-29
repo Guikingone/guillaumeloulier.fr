@@ -6,46 +6,18 @@ use Doctrine\ORM\Mapping as ORM;
 use AbstractBundle\Model\CommentaryInterface;
 
 /**
- * Commentary.
+ * Class Commentary
  *
- * @ORM\Table(name="commentary")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\CommentaryRepository")
+ * @package AppBundle\Entity
+ *
+ * @author Guillaume Loulier <contact@guillaumeloulier.fr>
  */
 class Commentary implements CommentaryInterface
 {
-    /**
-     * @var int
-     *
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
-     */
     private $id;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="author", type="string", length=255)
-     */
     private $author;
-
-    /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="date", type="datetime")
-     */
     private $date;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="content", type="text")
-     */
     private $content;
-
-    /**
-     * @ORM\ManyToOne(targetEntity="AbstractBundle\Model\ArticleInterface", inversedBy="commentary")
-     */
     private $article;
 
     /**
@@ -160,5 +132,34 @@ class Commentary implements CommentaryInterface
     public function getArticle()
     {
         return $this->article;
+    }
+    /**
+     * @var \AppBundle\Entity\Article
+     */
+    private $category;
+
+
+    /**
+     * Set category
+     *
+     * @param \AppBundle\Entity\Article $category
+     *
+     * @return Commentary
+     */
+    public function setCategory(\AppBundle\Entity\Article $category = null)
+    {
+        $this->category = $category;
+
+        return $this;
+    }
+
+    /**
+     * Get category
+     *
+     * @return \AppBundle\Entity\Article
+     */
+    public function getCategory()
+    {
+        return $this->category;
     }
 }

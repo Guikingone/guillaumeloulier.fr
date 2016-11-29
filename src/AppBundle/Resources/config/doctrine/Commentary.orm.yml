@@ -1,0 +1,22 @@
+AppBundle\Entity\Commentary:
+    type: entity
+    table: guillaumeloulier_commentary
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        author:
+            type: string
+            lenght: 200
+        date:
+            type: datetime
+        content:
+            type: text
+    manyToOne:
+        category:
+            targetEntity: AppBundle\Entity\Article
+            inversedBy: commentary
+            joinColumn:
+                name: article_id
+                referencedColumnName: id

@@ -1,0 +1,35 @@
+AppBundle\Entity\Article:
+    type: entity
+    table: guillaumeloulier_article
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        title:
+            type: string
+            length: 255
+            unique: true
+        author:
+            type: string
+            length: 150
+        datePublication:
+            type: datetime
+        content:
+            type: text
+    manyToOne:
+        category:
+            targetEntity: AppBundle\Entity\Category
+            inversedBy: article
+            joinColumn:
+                name: category_id
+                referencedColumnName: id
+    oneToMany:
+        tags:
+            targetEntity: AppBundle\Entity\Tags
+            mappedBy: tags
+    oneToMany:
+        commentary:
+            targetEntity: AppBundle\Entity\Commentary
+            mappedBy: commentary
+

@@ -1,0 +1,16 @@
+AppBundle\Entity\Category:
+    type: entity
+    table: guillaumeloulier_category
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        title:
+            type: string
+            lenght: 100
+            nullable: false
+    oneToMany:
+        tags:
+            targetEntity: AppBundle\Entity\Article
+            mappedBy: tags
