@@ -1,17 +1,13 @@
 {
   "compilerOptions": {
-    "outDir": "./web/prod/typescript",
+    "outDir": "./dist/",
     "sourceMap": true,
     "noImplicitAny": true,
     "module": "commonjs",
     "target": "es5",
     "jsx": "react"
   },
-  "exclude": [
-    "./node_modules"
-  ],
   "files": [
-    "./typings/index.d.ts",
-    "./web/dev/Typescript/index.tsx"
+    "./web/dev/typescript/index.tsx"
   ]
 }
