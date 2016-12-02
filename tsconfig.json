@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
-    "sourceMap": true,
-    "noImplicitAny": true,
     "module": "commonjs",
     "target": "es5",
-    "jsx": "react"
+    "sourceMap": false,
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
   },
-  "files": [
-    "./web/dev/typescript/index.tsx"
+  "exclude": [
+    "node_modules"
   ]
 }

@@ -15,6 +15,7 @@
                 </a>
             </div>
         </div>
+        <core-introduction></core-introduction>
     </section>
     <section class="articles" id="articles">
         <div class="mdl-grid">
@@ -22,7 +23,8 @@
                 <div class="articles-bloc_show">
 
                 </div>
-                <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="{{ path('home_blog') }}">
+                <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                   href="{{ path('home_blog') }}">
                     En lire plus
                 </a>
             </div>
@@ -35,14 +37,12 @@
                     <h2>Une première information en dur !</h2>
                     <p>Hello World !</p>
                 </article>
-                <core-informations></core-informations>
             </div>
         </div>
     </section>
     <section class="row formations" id="formations">
         <div class="mdl-grid">
             <div class="mdl-cell mdl-cell--12-col-phone">
-                <core-formation></core-formation>
             </div>
         </div>
     </section>
@@ -50,6 +50,6 @@
 
 {% block javascripts %}
     {{ parent() }}
-    <script src="{{ asset('prod/app/js/index.js') }}"></script>
+    <script src="{{ asset('prod/app/index.js') }}"></script>
 {% endblock %}
 

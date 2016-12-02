@@ -21,4 +21,5 @@
 /node_modules/
 
 # Compilation directory
-/web/prod/*
+/web/prod/app/
+/typings
