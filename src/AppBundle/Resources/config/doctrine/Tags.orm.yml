@@ -10,7 +10,7 @@ AppBundle\Entity\Tags:
             type: string
             length: 200
     manyToOne:
-        category:
+        article:
             targetEntity: AppBundle\Entity\Article
             inversedBy: tags
             joinColumn:

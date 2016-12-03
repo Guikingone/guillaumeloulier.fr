@@ -10,7 +10,6 @@
 
 namespace AppBundle\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
 use AbstractBundle\Model\ArticleInterface;
 use Doctrine\Common\Collections\ArrayCollection;
 
@@ -29,7 +28,7 @@ class Article implements ArticleInterface
     private $content;
     private $category;
     private $tags;
-    private $commentary;
+    private $commentaries;
 
     /**
      * Constructor.
@@ -37,7 +36,7 @@ class Article implements ArticleInterface
     public function __construct()
     {
         $this->tags = new ArrayCollection();
-        $this->commentary = new ArrayCollection();
+        $this->commentaries = new ArrayCollection();
     }
 
     /**
@@ -155,31 +154,7 @@ class Article implements ArticleInterface
     }
 
     /**
-     * Set category.
-     *
-     * @param \AppBundle\Entity\Category $category
-     *
-     * @return Article
-     */
-    public function setCategory(Category $category = null)
-    {
-        $this->category = $category;
-
-        return $this;
-    }
-
-    /**
-     * Get category.
-     *
-     * @return \AppBundle\Entity\Category
-     */
-    public function getCategory()
-    {
-        return $this->category;
-    }
-
-    /**
-     * Add tag.
+     * Add tag
      *
      * @param \AppBundle\Entity\Tags $tag
      *
@@ -193,7 +168,7 @@ class Article implements ArticleInterface
     }
 
     /**
-     * Remove tag.
+     * Remove tag
      *
      * @param \AppBundle\Entity\Tags $tag
      */
@@ -203,7 +178,7 @@ class Article implements ArticleInterface
     }
 
     /**
-     * Get tags.
+     * Get tags
      *
      * @return \Doctrine\Common\Collections\Collection
      */
@@ -213,36 +188,26 @@ class Article implements ArticleInterface
     }
 
     /**
-     * Add commentary.
+     * Set category
      *
-     * @param \AppBundle\Entity\Commentary $commentary
+     * @param \AppBundle\Entity\Category $category
      *
      * @return Article
      */
-    public function addCommentary(Commentary $commentary)
+    public function setCategory(Category $category = null)
     {
-        $this->commentary[] = $commentary;
+        $this->category = $category;
 
         return $this;
     }
 
     /**
-     * Remove commentary.
+     * Get category
      *
-     * @param \AppBundle\Entity\Commentary $commentary
+     * @return \AppBundle\Entity\Category
      */
-    public function removeCommentary(Commentary $commentary)
+    public function getCategory()
     {
-        $this->commentary->removeElement($commentary);
-    }
-
-    /**
-     * Get commentary.
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getCommentary()
-    {
-        return $this->commentary;
+        return $this->category;
     }
 }

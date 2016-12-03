@@ -14,9 +14,9 @@ AppBundle\Entity\Commentary:
         content:
             type: text
     manyToOne:
-        category:
+        article:
             targetEntity: AppBundle\Entity\Article
-            inversedBy: commentary
+            inversedBy: commentaries
             joinColumn:
                 name: article_id
                 referencedColumnName: id

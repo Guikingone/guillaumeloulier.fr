@@ -27,9 +27,8 @@ AppBundle\Entity\Article:
     oneToMany:
         tags:
             targetEntity: AppBundle\Entity\Tags
-            mappedBy: tags
-    oneToMany:
-        commentary:
+            mappedBy: article
+        commentaries:
             targetEntity: AppBundle\Entity\Commentary
-            mappedBy: commentary
+            mappedBy: article
 

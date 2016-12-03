@@ -2,7 +2,6 @@
 
 namespace AppBundle\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
 use AbstractBundle\Model\CommentaryInterface;
 
 /**
@@ -132,34 +131,5 @@ class Commentary implements CommentaryInterface
     public function getArticle()
     {
         return $this->article;
-    }
-    /**
-     * @var \AppBundle\Entity\Article
-     */
-    private $category;
-
-
-    /**
-     * Set category
-     *
-     * @param \AppBundle\Entity\Article $category
-     *
-     * @return Commentary
-     */
-    public function setCategory(\AppBundle\Entity\Article $category = null)
-    {
-        $this->category = $category;
-
-        return $this;
-    }
-
-    /**
-     * Get category
-     *
-     * @return \AppBundle\Entity\Article
-     */
-    public function getCategory()
-    {
-        return $this->category;
     }
 }

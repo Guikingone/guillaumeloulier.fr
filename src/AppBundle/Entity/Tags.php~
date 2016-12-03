@@ -75,4 +75,33 @@ class Tags implements TagsInterface
     {
         return $this->article;
     }
+    /**
+     * @var \AppBundle\Entity\Article
+     */
+    private $category;
+
+
+    /**
+     * Set category
+     *
+     * @param \AppBundle\Entity\Article $category
+     *
+     * @return Tags
+     */
+    public function setCategory(Article $category = null)
+    {
+        $this->category = $category;
+
+        return $this;
+    }
+
+    /**
+     * Get category
+     *
+     * @return \AppBundle\Entity\Article
+     */
+    public function getCategory()
+    {
+        return $this->category;
+    }
 }

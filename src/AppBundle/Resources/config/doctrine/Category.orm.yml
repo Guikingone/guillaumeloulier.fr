@@ -11,6 +11,6 @@ AppBundle\Entity\Category:
             lenght: 100
             nullable: false
     oneToMany:
-        tags:
+        article:
             targetEntity: AppBundle\Entity\Article
-            mappedBy: tags
+            mappedBy: category
