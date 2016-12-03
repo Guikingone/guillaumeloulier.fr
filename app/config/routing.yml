@@ -3,6 +3,21 @@ app:
     type:     annotation
     prefix:   /
 
+home:
+   path:    /
+   methods: 'GET'
+   defaults: { _controller: AppBundle:Web/Home:index }
+
+blog:
+    path:    /blog
+    methods: 'GET'
+    defaults: { _controller: AppBundle:Web/Home:blog }
+
+creations:
+    path:    /creations
+    methods: 'GET'
+    defaults: { _controller: AppBundle:Web/Home:creations }
+
 # FOS Bundle
 fos_js_routing:
     resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"

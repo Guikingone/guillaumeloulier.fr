@@ -7,42 +7,41 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 
+/**
+ * Class HomeController
+ *
+ * @package AppBundle\Controller\Web
+ */
 class HomeController extends Controller
 {
     /**
-     * @Route("/", name="home")
-     * @Template("Home/index.html.twig")
-     * @Method("GET")
-     *
-     * @return array
+     * @return \Symfony\Component\HttpFoundation\Response
      */
     public function indexAction()
     {
-        return array('controller' => 'home');
+        return $this->render(':Home:index.html.twig', array(
+            'controller' => 'home'
+        ));
     }
 
     /**
-     * @Route("/blog", name="home_blog")
-     * @Template("Home/blog.html.twig")
-     * @Method("GET")
-     *
-     * @return array
+     * @return \Symfony\Component\HttpFoundation\Response
      */
     public function blogAction()
     {
-        return array('controller' => 'blog');
+        return $this->render(':Home:blog.html.twig', array(
+            'controller' => 'blog'
+        ));
     }
 
     /**
-     * @Route("/creations", name="home_creations")
-     * @Template("Home/creations.html.twig")
-     * @Method("GET")
-     *
-     * @return array
+     * @return \Symfony\Component\HttpFoundation\Response
      */
     public function creationsAction()
     {
-        return array('controller' => 'creations');
+        return $this->render(':Home:creations.html.twig', array(
+            'controller' => 'creations'
+        ));
     }
 
     /**

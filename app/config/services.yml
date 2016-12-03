@@ -1,5 +1,5 @@
 parameters:
-#    parameter_name: value
+# List of parameters used into this application
 
 services:
     app.back:
