@@ -16,7 +16,7 @@ namespace AbstractBundle\Model;
 interface TagsInterface
 {
     /**
-     * @return integer
+     * @return int
      */
     public function getId();
 

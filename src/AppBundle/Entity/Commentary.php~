@@ -5,9 +5,8 @@ namespace AppBundle\Entity;
 use AbstractBundle\Model\CommentaryInterface;
 
 /**
- * Class Commentary
+ * Class Commentary.
  *
- * @package AppBundle\Entity
  *
  * @author Guillaume Loulier <contact@guillaumeloulier.fr>
  */

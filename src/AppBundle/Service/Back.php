@@ -21,9 +21,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\OptionsResolver\Exception\InvalidOptionsException;
 
 /**
- * Class Back
- *
- * @package AppBundle\Service
+ * Class Back.
  *
  * @author Guillaume Loulier <contact@guillaumeloulier.fr>
  */

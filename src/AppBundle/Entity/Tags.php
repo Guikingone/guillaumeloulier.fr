@@ -2,13 +2,11 @@
 
 namespace AppBundle\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
 use AbstractBundle\Model\TagsInterface;
 
 /**
- * Class Tags
+ * Class Tags.
  *
- * @package AppBundle\Entity
  *
  * @author Guillaume Loulier <contact@guillaumeloulier.fr>
  */
@@ -80,9 +78,8 @@ class Tags implements TagsInterface
      */
     private $category;
 
-
     /**
-     * Set category
+     * Set category.
      *
      * @param \AppBundle\Entity\Article $category
      *
@@ -96,7 +93,7 @@ class Tags implements TagsInterface
     }
 
     /**
-     * Get category
+     * Get category.
      *
      * @return \AppBundle\Entity\Article
      */

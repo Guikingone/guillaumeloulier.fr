@@ -6,9 +6,8 @@ use AppBundle\Entity\Article;
 use Symfony\Bundle\FrameworkBundle\Tests\TestCase;
 
 /**
- * Class ArticleTest
+ * Class ArticleTest.
  *
- * @package tests\AppBundle\Unit\Entity
  *
  * @author Guillaume Loulier <contact@guillaume.loulier.fr>
  */

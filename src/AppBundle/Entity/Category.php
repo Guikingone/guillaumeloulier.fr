@@ -11,14 +11,12 @@
 
 namespace AppBundle\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
 use AbstractBundle\Model\CategoryInterface;
 use Doctrine\Common\Collections\ArrayCollection;
 
 /**
- * Class Category
+ * Class Category.
  *
- * @package AppBundle\Entity
  *
  * @author Guillaume Loulier <contact@guillaumeloulier.fr>
  */
@@ -108,9 +106,8 @@ class Category implements CategoryInterface
      */
     private $tags;
 
-
     /**
-     * Add tag
+     * Add tag.
      *
      * @param \AppBundle\Entity\Article $tag
      *
@@ -124,7 +121,7 @@ class Category implements CategoryInterface
     }
 
     /**
-     * Remove tag
+     * Remove tag.
      *
      * @param \AppBundle\Entity\Article $tag
      */
@@ -134,7 +131,7 @@ class Category implements CategoryInterface
     }
 
     /**
-     * Get tags
+     * Get tags.
      *
      * @return \Doctrine\Common\Collections\Collection
      */

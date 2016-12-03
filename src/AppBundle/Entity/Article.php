@@ -14,8 +14,7 @@ use AbstractBundle\Model\ArticleInterface;
 use Doctrine\Common\Collections\ArrayCollection;
 
 /**
- * Class Article
- * @package AppBundle\Entity
+ * Class Article.
  *
  * @author Guillaume Loulier <contact@guillaumeloulier.fr>
  */
@@ -154,7 +153,7 @@ class Article implements ArticleInterface
     }
 
     /**
-     * Add tag
+     * Add tag.
      *
      * @param \AppBundle\Entity\Tags $tag
      *
@@ -168,7 +167,7 @@ class Article implements ArticleInterface
     }
 
     /**
-     * Remove tag
+     * Remove tag.
      *
      * @param \AppBundle\Entity\Tags $tag
      */
@@ -178,7 +177,7 @@ class Article implements ArticleInterface
     }
 
     /**
-     * Get tags
+     * Get tags.
      *
      * @return \Doctrine\Common\Collections\Collection
      */
@@ -188,7 +187,7 @@ class Article implements ArticleInterface
     }
 
     /**
-     * Set category
+     * Set category.
      *
      * @param \AppBundle\Entity\Category $category
      *
@@ -202,12 +201,46 @@ class Article implements ArticleInterface
     }
 
     /**
-     * Get category
+     * Get category.
      *
      * @return \AppBundle\Entity\Category
      */
     public function getCategory()
     {
         return $this->category;
+    }
+
+    /**
+     * Add commentary
+     *
+     * @param \AppBundle\Entity\Commentary $commentary
+     *
+     * @return Article
+     */
+    public function addCommentary(Commentary $commentary)
+    {
+        $this->commentaries[] = $commentary;
+
+        return $this;
+    }
+
+    /**
+     * Remove commentary
+     *
+     * @param \AppBundle\Entity\Commentary $commentary
+     */
+    public function removeCommentary(Commentary $commentary)
+    {
+        $this->commentaries->removeElement($commentary);
+    }
+
+    /**
+     * Get commentaries
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getCommentaries()
+    {
+        return $this->commentaries;
     }
 }
