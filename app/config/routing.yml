@@ -1,8 +1,3 @@
-app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
 home:
    path:    /
    methods: 'GET'
@@ -18,6 +13,17 @@ creations:
     methods: 'GET'
     defaults: { _controller: AppBundle:Web/Home:creations }
 
-# FOS Bundle
-fos_js_routing:
-    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
+about:
+    path:    /about
+    methods: 'GET'
+    defaults: { _controller: AppBundle:Web/Home:about }
+
+formations:
+    path:    /formations
+    methods: 'GET'
+    defaults: { _controller: AppBundle:Web/Home:formation }
+
+contact:
+    path:    /contact
+    methods: 'GET'
+    defaults: { _controller: AppBundle:Web/Home:contact }

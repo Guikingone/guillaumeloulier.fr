@@ -41,20 +41,20 @@
                     <div class="mdl-layout-spacer"></div>
                     <nav class="mdl-navigation mdl-layout--large-screen-only">
                         <a class="mdl-navigation__link" href="{{ path('home') }}">Accueil</a>
-                        <a class="mdl-navigation__link" href="{{ path('home_blog') }}">Blog</a>
-                        <a class="mdl-navigation__link" href="{{ path('home_creations') }}">Créations</a>
-                        <a class="mdl-navigation__link" href="{{ path('home_formations') }}">Formations</a>
-                        <a class="mdl-navigation__link" href="{{ path('home_contact') }}">Contact</a>
+                        <a class="mdl-navigation__link" href="{{ path('blog') }}">Blog</a>
+                        <a class="mdl-navigation__link" href="{{ path('creations') }}">Créations</a>
+                        <a class="mdl-navigation__link" href="{{ path('formations') }}">Formations</a>
+                        <a class="mdl-navigation__link" href="{{ path('contact') }}">Contact</a>
                     </nav>
                 </div>
             </header>
             <div class="mdl-layout__drawer">
                 <nav class="mdl-navigation">
                     <a class="mdl-navigation__link" href="{{ path('home') }}">Accueil</a>
-                    <a class="mdl-navigation__link" href="{{ path('home_blog') }}">Blog</a>
-                    <a class="mdl-navigation__link" href="{{ path('home_creations') }}">Créations</a>
-                    <a class="mdl-navigation__link" href="{{ path('home_formations') }}">Formations</a>
-                    <a class="mdl-navigation__link" href="{{ path('home_contact') }}">Contact</a>
+                    <a class="mdl-navigation__link" href="{{ path('blog') }}">Blog</a>
+                    <a class="mdl-navigation__link" href="{{ path('creations') }}">Créations</a>
+                    <a class="mdl-navigation__link" href="{{ path('formations') }}">Formations</a>
+                    <a class="mdl-navigation__link" href="{{ path('contact') }}">Contact</a>
                 </nav>
             </div>
             <main class="mdl-layout__content">
@@ -81,17 +81,9 @@
         </div>
         <!-- Footer -->
         {% block javascripts %}
-            <script src="{{ asset('prod/app/index.js') }}"></script>
             <!-- Javascript -->
             <script src="{{ asset('dev/vendor/jquery/dist/jquery.min.js') }}"></script>
             <script src="{{ asset('dev/vendor/material-design-lite/material.min.js') }}"></script>
-
-            <!-- FOS Javascript -->
-            <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
-            <script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>
-
-            <!-- Global Javascript -->
-            <script src="#" async></script>
         {% endblock %}
     </body>
 </html>

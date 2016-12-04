@@ -3,9 +3,6 @@
 namespace AppBundle\Controller\Web;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 
 /**
  * Class HomeController
@@ -45,38 +42,32 @@ class HomeController extends Controller
     }
 
     /**
-     * @Route("/about", name="home_about")
-     * @Template("Home/about.html.twig")
-     * @Method("GET")
-     *
-     * @return array
+     * @return \Symfony\Component\HttpFoundation\Response
      */
     public function aboutAction()
     {
-        return array('controller' => 'contact');
+        return $this->render(':Home:about.html.twig', array(
+            'controller' => 'about'
+        ));
     }
 
     /**
-     * @Route("/formations", name="home_formations")
-     * @Template("Home/formations.html.twig")
-     * @Method("GET")
-     *
-     * @return array
+     * @return \Symfony\Component\HttpFoundation\Response
      */
     public function formationAction()
     {
-        return array('controller' => 'formation');
+        return $this->render(':Home:formations.html.twig', array(
+            'controller' => 'formations'
+        ));
     }
 
     /**
-     * @Route("/contact", name="home_contact")
-     * @Template("Home/contact.html.twig")
-     * @Method("GET")
-     *
-     * @return array
+     * @return \Symfony\Component\HttpFoundation\Response
      */
     public function contactAction()
     {
-        return array('controller' => 'contact');
+        return $this->render(':Home:contact.html.twig', array(
+            'controller'
+        ));
     }
 }
