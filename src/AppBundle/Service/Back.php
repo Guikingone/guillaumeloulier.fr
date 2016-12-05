@@ -17,6 +17,7 @@ use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\OptimisticLockException;
 use Doctrine\ORM\ORMInvalidArgumentException;
 use Symfony\Component\Form\FormFactory;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\OptionsResolver\Exception\InvalidOptionsException;
 
@@ -75,15 +76,20 @@ class Back
             if ($form->isSubmitted() && $form->isValid()) {
                 $this->doctrine->persist($article);
                 $this->doctrine->flush();
+                try {
+                    $response = new RedirectResponse('/darkzone');
+                    $response->send();
+                } catch (\InvalidArgumentException $exception) {
+                    $exception->getMessage();
+                }
             }
+            return $form;
         } catch (InvalidOptionsException $optionsException) {
             echo 'Erreur détectée : '.$optionsException->getMessage();
         } catch (ORMInvalidArgumentException $argumentException) {
             echo 'Erreur détectée : '.$argumentException->getMessage();
         } catch (OptimisticLockException $lockException) {
             echo 'Erreur détectée : '.$lockException->getMessage();
-        } finally {
-            return $form;
         }
     }
 }

@@ -1,51 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <section class="introduction" id="introduction">
-        <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--12-col-phone">
-                <h2 class="introduction-header_text">They say that nothing it's impossible with desire and passion.</h2>
-                <p class="introduction-header_subtext">
-                    Créer quelque chose d'inédit requiert du savoir-faire et de l'envie, deux qualités commune à tout
-                    ceux qui voient au delà des apparences, car voici le secret de l'apprentissage, voir plus loin
-                    que le miroir de l'ignorance.
-                </p>
-                <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="{{ path('contact') }}">
-                   Envie d'en discuter ?
-                </a>
-                <core-introduction></core-introduction>
-            </div>
-        </div>
-    </section>
-    <section class="articles" id="articles">
-        <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--12-col-phone">
-                <div class="articles-bloc_show">
-
-                </div>
-                <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-                   href="{{ path('blog') }}">
-                    En lire plus
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="information" id="information">
-        <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--12-col-phone">
-                <article class="information-bloc_informations">
-                    <h2>Une première information en dur !</h2>
-                    <p>Hello World !</p>
-                </article>
-            </div>
-        </div>
-    </section>
-    <section class="row formations" id="formations">
-        <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--12-col-phone">
-            </div>
-        </div>
-    </section>
+    <core-introduction></core-introduction>
 {% endblock %}
 
 {% block javascripts %}

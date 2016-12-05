@@ -33,53 +33,9 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        <!-- Navigation bar -->
-        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-            <header class="mdl-layout__header">
-                <div class="mdl-layout__header-row">
-                    <span class="mdl-layout-title">Guillaume Loulier {% block navbar %}{% endblock %}</span>
-                    <div class="mdl-layout-spacer"></div>
-                    <nav class="mdl-navigation mdl-layout--large-screen-only">
-                        <a class="mdl-navigation__link" href="{{ path('home') }}">Accueil</a>
-                        <a class="mdl-navigation__link" href="{{ path('blog') }}">Blog</a>
-                        <a class="mdl-navigation__link" href="{{ path('creations') }}">Créations</a>
-                        <a class="mdl-navigation__link" href="{{ path('formations') }}">Formations</a>
-                        <a class="mdl-navigation__link" href="{{ path('contact') }}">Contact</a>
-                    </nav>
-                </div>
-            </header>
-            <div class="mdl-layout__drawer">
-                <nav class="mdl-navigation">
-                    <a class="mdl-navigation__link" href="{{ path('home') }}">Accueil</a>
-                    <a class="mdl-navigation__link" href="{{ path('blog') }}">Blog</a>
-                    <a class="mdl-navigation__link" href="{{ path('creations') }}">Créations</a>
-                    <a class="mdl-navigation__link" href="{{ path('formations') }}">Formations</a>
-                    <a class="mdl-navigation__link" href="{{ path('contact') }}">Contact</a>
-                </nav>
-            </div>
-            <main class="mdl-layout__content">
-                <div class="page-content">
-                    <!-- Body -->
-                    {% block body %}
-                    {% endblock %}
-                </div>
-            </main>
-            <footer class="mdl-mini-footer">
-                <div class="mdl-mini-footer__left-section">
-                    <div class="mdl-logo">Title</div>
-                    <ul class="mdl-mini-footer__link-list">
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Privacy & Terms</a></li>
-                    </ul>
-                </div>
-                <div class="mdl-mini-footer_right-section">
-                    <p>
-                        Hello World !
-                    </p>
-                </div>
-            </footer>
-        </div>
-        <!-- Footer -->
+        <!-- Main body -->
+        {% block body %}
+        {% endblock %}
         {% block javascripts %}
             <!-- Javascript -->
             <script src="{{ asset('dev/vendor/jquery/dist/jquery.min.js') }}"></script>
