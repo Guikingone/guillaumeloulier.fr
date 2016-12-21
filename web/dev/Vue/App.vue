@@ -1,16 +1,22 @@
 <template>
-  <h1>Because creating the future needs expertise</h1>
+  <div>
+    <h1>Because creating the future needs expertise</h1>
+  </div>
 </template>
 
 <script>
-export default {
-  name: 'app',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
+  export default {
+    data: function() {
+      return {
+        status: 'Critical'
+      }
+    },
+    methods: {
+      changeStatus() {
+        this.status = 'Good !';
+      }
     }
   }
-}
 </script>
 
 <style>
