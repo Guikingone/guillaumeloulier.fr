@@ -1,18 +1,18 @@
-# Guillaume Loulier 
+# guillaumeloulier.fr
 
-This source code is linked to the website guillaumeloulier.fr.
+> Source code of guillaumeloulier.fr website
 
-# Quality :
+## Build Setup
 
-This project is build with love by Travis, SensioLabsInsight and Gitlab  : 
+``` bash
+# install dependencies
+npm install
 
-**_Travis :_** 
+# serve with hot reload at localhost:8080
+npm run dev
 
-[![Build Status](https://travis-ci.org/Guikingone/guillaumeloulier.fr.svg?branch=master)](https://travis-ci.org/Guikingone/guillaumeloulier.fr)
+# build for production with minification
+npm run build
+```
 
-**_SensioLabsInsight :_** 
-
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/51974cb6-3bec-4589-8e0e-114efefbb5a9/big.png)](https://insight.sensiolabs.com/projects/51974cb6-3bec-4589-8e0e-114efefbb5a9)
-
-**_Gitlab :_**
-
+For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).

@@ -22,3 +22,7 @@
 
 # Compilation directory
 /web/prod/
+
+.DS_Store
+dist/
+npm-debug.log
