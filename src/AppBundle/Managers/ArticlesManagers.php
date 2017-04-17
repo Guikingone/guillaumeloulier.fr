@@ -18,7 +18,5 @@ namespace AppBundle\Managers;
  */
 class ArticlesManagers
 {
-    private $doctrine;
 
-    private $form;
 }

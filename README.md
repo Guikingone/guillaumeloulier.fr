@@ -1,20 +1,22 @@
-# guillaumeloulier.fr
+# guillaumeloulier.fr - API
 
-This project is the source code of guillaumeloulier.fr website.
+This project is the source code of guillaumeloulier.fr website in the API side.
 
 ## Build Setup
 
-This project is build with love and passion using Travis, SensioLabsInsight and Gitlab : 
+This project is build with love and passion using Gitlab, SensioLabsInsight :
 
-**_Travis-CI :_**
+**_Gitlab_**
 
-[![Build Status](https://travis-ci.org/Guikingone/guillaumeloulier.fr.svg?branch=master)](https://travis-ci.org/Guikingone/guillaumeloulier.fr)
+[![build status](http://gitlab.guillaumeloulier.fr/root/guillaumeloulier.fr/badges/master/build.svg)](http://gitlab.guillaumeloulier.fr/root/guillaumeloulier.fr/commits/master)
+
+**_Gitlab Coverage_**
+
+[![coverage report](http://gitlab.guillaumeloulier.fr/root/guillaumeloulier.fr/badges/master/coverage.svg)](http://gitlab.guillaumeloulier.fr/root/guillaumeloulier.fr/commits/master)
 
 **_SensioLabsInsight :_**
 
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/51974cb6-3bec-4589-8e0e-114efefbb5a9/big.png)](https://insight.sensiolabs.com/projects/51974cb6-3bec-4589-8e0e-114efefbb5a9)
-
-**_Gitlab :_**
 
 ## Usage
 
