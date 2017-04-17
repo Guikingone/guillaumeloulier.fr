@@ -16,13 +16,11 @@
 /web/bundles/
 
 # Personnal directory
-.idea/
 /web/dev/vendor/
 /node_modules/
 
 # Compilation directory
 /web/prod/
 
-.DS_Store
 dist/
 npm-debug.log
